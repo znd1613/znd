@@ -1,2 +1,245 @@
+body{
+	overflow-x: hidden;
+}
+#box{
+	width: 18.4rem;
+	display: flex;
+	/*margin-left: -8.4rem;*/
+}
+.text1{
+	animation: nth 1s;
+	animation-fill-mode: forwards;
+}
+ @keyframes nth{
+ 	0%{
+ 		margin-left: -8.4rem;
+ 	}
+ 	100%{
+ 		margin-left: 0;
+ 	}
+ }
+.text2{
+	animation: cth 1s ;
+	animation-fill-mode: forwards;
+}
+@keyframes cth{
+ 	0%{
+ 		margin-left: 0;
+ 	}
+ 	100%{
+ 		margin-left: -8.4rem;
+ 	}
+ }
+.view{
+	width: 10.0rem;
+}
+.view header{
+	width: 100%;
+	height: 2.0rem;
+	background: url(../../../images/bg-image-header-home.jpg) no-repeat;
+	background-size: 100% 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 0.266667rem;
+}
+.view header span{
+	height: 1.493333rem;
+	width: 1.493333rem;
+	background-color: #fff;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.view header span>img{
+	width: 1.066667rem;
+	height: 1.066667rem;
+}
+.view header>img{
+	width: 3.466667rem;
+	height: 0.666667rem;
+}
+.view header>div{
+	width: 1.12rem;
+	height: 1.12rem;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	padding: 0.32rem 0 0 0.293333rem;
+}
+.view header>div>span{
+	display: block;
+	width: 0.533333rem;
+	background: #fff;
+	height: 0.053333rem;
+}
+.view header>div>span:nth-of-type(2){
+	margin: 0.133333rem 0 0.133333rem 0;
+}
+.view .content{
+	
+}
+/*.footer{
+	position: fixed;
+	width: 100%;
+	height: 1.013333rem;
+	background: #304d64;
+	bottom: 0;
+	left: 0;
+}*/
 
 
+
+/*右侧栏隐藏部分开始*/
+.centre{
+	width: 8.4rem;
+	background: #e4e4e4;
+	/*display: none;*/
+}
+.centre{
+	width: 8.4rem;
+	background: #e4e4e4;
+}
+.centre header{
+	width: 100%;
+	height: 2.56rem;
+	background: url(../../../images/bg-image-nav-guest.jpg) no-repeat;
+	background-size: 100% 100%;
+	display: flex;
+	justify-content: space-between;
+	padding-left: 0.48rem;
+	align-items: center;
+	
+}
+.join_me p span{
+	display: inline-block;
+	padding: 0 0.213333rem;
+	height: 0.613333rem;
+	line-height: 0.613333rem;
+	background: #2d271e;
+	color: #fff;
+}
+.join_me p:nth-of-type(2){
+	margin: 0.106667rem 0;
+}
+.join_me p em{
+	font-style: normal;
+	color: #cb5977;
+}
+.personal_center{
+	height: 1.333333rem;
+	width: 1.706667rem;
+	display: flex;
+	align-items: center;
+}
+.personal_center span{
+	color: #fff;
+	margin-left: 0.08rem;
+}
+.login_img{
+	width: 1.333333rem;
+	height: 1.333333rem;
+	border-radius: 50%;
+	border: 0.08rem solid #fff;
+	background: #304d64;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.login_img>img{
+	width: 0.666667rem;
+	height: 0.666667rem;
+}
+.alone{
+	
+	margin-top: 0;
+	padding: 0.266667rem 0.4rem;
+}
+.alone input[type="text"],.alone input[type="date"],.alone input[type="submit"]{
+	border-radius: 0.533333rem;
+}
+/*侧边栏连接部分开始*/
+.interlinkage{
+	width: 100%;
+	/*padding-left: 0.453333rem;*/
+	border-top: 1px solid #d8d8d8;
+}
+.interlinkage>li{
+	height: 0.88rem;
+	border-bottom: 1px solid #d8d8d8;
+	background: #ffffff;
+	line-height: 0.88rem;
+	text-indent: 0.453333rem;
+}
+.interlinkage>li span{
+	float: right;
+	margin-right: 0.186667rem;
+}
+.interlinkage>li:last-of-type{
+	margin-top: 0.213333rem;
+	border-top: 1px solid #d8d8d8;
+}
+/*侧边栏表单部分开始*/
+.destination{
+	width: 100%;
+	margin-top: 0.4rem;
+}
+.destination h2{
+	color: #8ca6c5;
+	height: 0.693333rem;
+	line-height: 0.693333rem;
+}
+.destination input[type="text"]{
+	width: 100%;
+	height: 1.066667rem;
+	border: none;
+	background:#eaeaea  url(../../../images/home_search_03.png) 0.266667rem center no-repeat;
+	background-size: 0.48rem 0.48rem;
+	padding-left: 0.88rem;
+}
+.stay{
+	width: 100%;
+	margin-top: 0.266667rem;
+}
+.stay p{
+	height: 0.64rem;
+	line-height: 0.64rem;
+	font-size: 0.373333rem;
+	color: #8ca6c2;
+}
+.put_up{
+	width: 48%;
+	float: left;
+}
+.put_up input[type="date"]{
+	width: 100%;
+	height: 1.066667rem;
+	border: none;
+	background:#eaeaea url(../../../images/home_zhusu_03.png) 0.266667rem center no-repeat;
+	background-size: 0.48rem 0.48rem;
+	padding-left: 0.853333rem;
+}
+.check_out{
+	width: 48%;
+	float: right;
+	margin-bottom: 0.293333rem;
+}
+.check_out input[type="date"]{
+	width: 100%;
+	background: #eaeaea;
+	height: 1.066667rem;
+	border: none;
+	background:#eaeaea url(../../../images/home_zhusu_03.png) 0.266667rem center no-repeat;
+	background-size: 0.48rem 0.48rem;
+	padding-left: 0.853333rem;
+}
+.stay input[type="submit"]{
+	display: block;
+	clear: both;
+	width: 100%;
+	height: 1.066667rem;
+	border: none;
+	background: #cb5977;
+	color: #fff;
+
+}

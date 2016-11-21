@@ -6,14 +6,88 @@
       <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
     <link rel="stylesheet" href="app/common/css/main.css" media="screen" title="no title">
     <link rel="stylesheet" href="app/common/css/reset.css" media="screen" title="no title">
+    <link rel="stylesheet" type="text/css" href="app/common/css/pablicCruise.css"/>
+    <!-- <link rel="stylesheet" type="text/css" href="app/common/css/private-ordering-rem.css" /> -->
     <script src="bower_components/angular/angular.min.js"></script>
     <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
     <script src="bower_components/angular-css/angular-css.min.js"></script>
   </head>
   <body>
-	<div ui-view>
-		
-	</div>
-    <script src="app/app.js"></script>
+    <!-- <div ui-sref="home"  class="top"></div> -->
+  <div id="box" ng-controller="ctr1" ng-class="{'text1':istext1,'text2':istext2,'text3':istext3}">
+      <div class="view">
+          <header>
+            <span ng-click="backClick()">
+              <img src="images/home_zanadu-logo1.png">
+            </span>
+            <img src="images/home_zanadu_logo.png">
+            <div ng-click="lsClick()">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+        </header>
+        <div class="content" ui-view>
+
+        </div>
+        <!-- <div class="footer">
+            <div>
+              
+            </div>
+        </div> -->
+      </div>
+      <div class="centre">
+            <header>
+              <div class="join_me">
+                <p><span>加入会员俱乐部</span></p>
+                <p><span>乐享各种优惠</span></p>
+                <p><span>点我马上 <em>登陆</em> 或 <em ui-sref="register">注册</em></span></p>
+              </div>
+              <div class="personal_center">
+                <div class="login_img">
+                  <img src="images/home-login.png">
+                </div>
+                <span>
+                  >
+                </span>
+              </div>
+          </header>
+          <form action="#" method="get" class="destination alone">
+            <input type="text" name="" placeholder="目的地/酒店/邮轮">
+            <div class="stay">
+              <div class="put_up">
+                <p>
+                  入住
+                </p>
+                <input type="date" name="" >
+              </div>
+              <div class="check_out">
+                <p>
+                  退房
+                </p>
+                <input type="date" name="" >
+              </div>
+              <input type="submit" name="" value="搜索">
+            </div>
+          </form>
+          <ul class="interlinkage">
+            <li>主页</li>
+            <li>目的地</li>
+            <li>预定行程<span>></span></li>
+            <li>杂志</li>
+            <li>活动</li>
+            <li>关于赞拿度<span>></span></li>
+            <li>切换到桌面版浏览</li>
+          </ul>
+      </div>
+  </div>
+    <script src="app/index.js"></script>
+    <script src="app/models/freeWalker/home.js"></script>
+    <script type="text/javascript">
+      document.documentElement.style.fontSize=innerWidth/10+"px";
+        window.onresize=function(){
+          document.documentElement.style.fontSize=innerWidth/10+"px";
+        }
+    </script>
   </body>
 </html>

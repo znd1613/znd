@@ -1,0 +1,53 @@
+@charset "utf-8";
+#gently .swiper-container{width: 100%;height: 5.493333rem;margin-bottom: 0.266667rem; }
+#gently .swiper-container img{width:100%;height: 5.493333rem;}
+.he{width: 100%;height: 1.146667rem;background: #2d363e;position: absolute;top: 1.333333rem;z-index: 1;color: #fff;padding: 0 0.266667rem}
+.he p{line-height: 1.146667rem;}
+.he p b{font-size: 0.48rem;}
+.he p span:last-of-type{margin-left: 4.8rem;}
+.he p span:last-of-type img:last-of-type{margin-left: 0.266667rem;}
+.tag{background: url(../images/pr-bg.png);width: 8.0rem; margin: 0 auto; margin-top: -0.346667rem; height: 0.666667rem;text-align: center; color: #fff; position: relative; background-size: 100%; z-index: 2;}
+#main{padding: 0 0.266667rem;}
+#main>h3{margin-top: 0.346667rem;line-height:0.533333rem;margin-bottom: 0.213333rem;}
+#main .la{margin-top: 0.4rem;}
+#main .la .po{width: 2.666667rem;height: 2.24rem;display: inline-block;float: left;margin-right: 0.266667rem;}
+#main .la .po p{width: 100%;height: 1.573333rem;background: #a77fa1;font-size: 0.8rem;color: #fff;text-align: center;line-height: 1.573333rem;font-weight: bold;s}
+#main .la .po span{display: block;width: 100%;height: 0.666667rem;background: #d9bdd4;color: #a77fa1;line-height: 0.666667rem;text-align: center;}
+#main .la>p{line-height: 0.533333rem;}
+#main .la>p:nth-of-type(2){margin-top: 0.533333rem;}
+#main #two{margin-top: 1.28rem;}
+#main #two>span{margin-top: 0.48rem;display: inline-block;}
+#main #two b{margin-top: 1.28rem;display: inline-block;}
+.zan{width: 9.466667rem;height: 5.333333rem;border: 1px solid #000;padding: 0.533333rem;margin-top: 1.28rem;margin-bottom: 0.533333rem;}
+.zan p{margin-top: 0.32rem;}
+.za{border-bottom: 1px dashed #999;}
+.meal {border-bottom: 1px dashed #999;}
+.meal h4{margin: 0.4rem 0;display: inline-block;}
+.meal ul{width: 9.466667rem;height: 7.173333rem;background: #e3eef5;margin-bottom: 0.4rem;padding: 0.4rem;padding-top: 0.16rem}
+.meal ul li{margin-top: 0.32rem;/*background: url(../images/pink_bullet.png) no-repeat 0 0.08rem*/list-style-type: disc;margin-left: 0.4rem;}
+#char ul li{font-weight: bold;}
+#char ul p{margin-left: 0.4rem;margin-top: 0.16rem;}
+#cost ul:first-of-type{height: 8.84rem;}
+#cost ul:last-of-type{height: 2.053333rem;}
+#cost ul li{margin-top: 0.32rem;}
+/**/
+#plane>p{float: right;height: 0.72rem;display: inline-block;margin-top: 0.266667rem}
+#plane>p span{height: 0.72rem;border-radius: 0.08rem;display: inline-block;line-height: 0.72rem;text-align: center;}
+#plane>p span:first-of-type{background: #cc5978;color: #fff;width: 1.386667rem}
+#plane>p span:last-of-type{color: #cc5978;border:1px solid #cc5978;margin-left: 0.266667rem;width: 2.026667rem}
+#plane .flg{width: 100%;height: 13.146667rem;background: #ebe3f5;padding: 0.4rem;margin-bottom: 0.4rem;}
+#plane .flg .fl{display: flex;margin-top: 0.266667rem;}
+#plane .flg .fl img{width: 0.4rem;height: 0.373333rem;margin-right: 0.266667rem;display: inline-block;}
+#plane .flg .fl div div{margin-bottom: 0.4rem;}
+
+.lv{width: 100%;height: 1.066667rem;margin-top: 0.4rem;background: #bdddec;display: flex;justify-content:space-between;align-items:center;padding: 0 0.133333rem;}
+.lv a{display: inline-block;width: 2.026667rem;height: 0.773333rem;background: #cc5978;color: #fff;text-align: center;line-height:0.773333rem;border-radius: 0.08rem; }
+
+#main>a{display: block;width: 2.666667rem;height: 0.933333rem;background: #8ca6c2;border-radius: 0.08rem;color: #fff;text-align: center;line-height: 0.933333rem;margin: 0.266667rem 3.386667rem 1.866667rem 3.386667rem;}
+/*footer*/
+#gently footer{width: 100%;height: 1.333333rem;background: #304d64;position: fixed;left: 0;bottom: 0;z-index: 1;display: flex;justify-content:space-between;}
+#gently footer div{display: flex;justify-content:space-around;width: 5.333333rem;}
+#gently footer div a{display: flex;flex-direction:column;margin-top: 0.32rem;}
+#gently footer div a b img{width: 0.4rem;height: 0.373333rem;display: block;margin: 0 auto;}
+#gently footer div a span{margin: 0.133333rem auto;color: #8ca6c2;}
+#gently footer>a{display: block;width: 2.08rem;height: 0.933333rem;background: #cb5977;border-radius: 0.08rem;color: #fff;line-height: 0.933333rem;text-align: center;margin: 0.266667rem 0.213333rem;}
