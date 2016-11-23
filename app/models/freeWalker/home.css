@@ -3,18 +3,20 @@
 .swiper-container{
 	width: 100%;
 	height: 4.533333rem;
+	overflow: hidden;
 }
  .swiper-wrapper{
-	width: 100%;
-	height: 100%;
+	width: 500%;
+	height: 4.533333rem;
+	display: flex;
 }
  .swiper-slide{
-	width: 100%;
-	height: 100%;
+	width: 20%;
+	height: 4.533333rem;
 }
  .swiper-slide>img{
 	width: 100%;
-	height: 100%;
+	height: 4.533333rem;
 }
 /*目的地探索部分开始*/
 .destination{
@@ -38,6 +40,8 @@
 .stay{
 	width: 100%;
 	margin-top: 0.266667rem;
+	display: none;
+	overflow: hidden;
 }
 .stay p{
 	height: 0.64rem;

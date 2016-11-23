@@ -7,10 +7,13 @@
     <link rel="stylesheet" href="app/common/css/main.css" media="screen" title="no title">
     <link rel="stylesheet" href="app/common/css/reset.css" media="screen" title="no title">
     <link rel="stylesheet" type="text/css" href="app/common/css/pablicCruise.css"/>
+    <link rel="stylesheet" type="text/css" href="swiper/swiper.min.css">
     <!-- <link rel="stylesheet" type="text/css" href="app/common/css/private-ordering-rem.css" /> -->
     <script src="bower_components/angular/angular.min.js"></script>
     <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
     <script src="bower_components/angular-css/angular-css.min.js"></script>
+    <script type="text/javascript" src="swiper/swiper.min.js"></script>
+    <script type="text/javascript" src="bower_components/jquery/jquery-v3.1.js"></script>
   </head>
   <body>
     <!-- <div ui-sref="home"  class="top"></div> -->
@@ -41,7 +44,7 @@
               <div class="join_me">
                 <p><span>加入会员俱乐部</span></p>
                 <p><span>乐享各种优惠</span></p>
-                <p><span>点我马上 <em>登陆</em> 或 <em ui-sref="register">注册</em></span></p>
+                <p><span>点我马上 <em>登陆</em> 或 <em ui-sref="register" ng-click="lsClick()">注册</em></span></p>
               </div>
               <div class="personal_center">
                 <div class="login_img">
@@ -70,19 +73,23 @@
               <input type="submit" name="" value="搜索">
             </div>
           </form>
-          <ul class="interlinkage">
-            <li>主页</li>
-            <li>目的地</li>
-            <li>预定行程<span>></span></li>
-            <li>杂志</li>
-            <li>活动</li>
-            <li>关于赞拿度<span>></span></li>
-            <li>切换到桌面版浏览</li>
-          </ul>
+          <div class="interlinkage_1">
+            <ul class="interlinkage_1_1">
+              <li>主页</li>
+              <li>目的地</li>
+              <li>预定行程<span>></span></li>
+              <li>杂志</li>
+              <li>活动</li>
+              <li>关于赞拿度<span>></span></li>
+              <li>切换到桌面版浏览</li>
+            </ul>
+          </div>
       </div>
   </div>
     <script src="app/index.js"></script>
     <script src="app/models/freeWalker/home.js"></script>
+    <script src="app/models/second_frame.js"></script>
+    <script src="app/models/freeWalker/villa.js"></script>
     <script type="text/javascript">
       document.documentElement.style.fontSize=innerWidth/10+"px";
         window.onresize=function(){

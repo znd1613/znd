@@ -1,0 +1,24 @@
+{
+	"data":[
+		{
+			"id":"5",
+			"img": "http://oh193mswr.bkt.clouddn.com/home-variety_15.png",
+			"name":"邮轮"
+		},
+		{
+			"id":"6",
+			"img": "http://oh193mswr.bkt.clouddn.com/home-variety_15_03.png",
+			"name":"国内短假"
+		},
+		{
+			"id":"7",
+			"img": "http://oh193mswr.bkt.clouddn.com/home-variety_17.png",
+			"name":"私人定制"
+		},
+		{
+			"id":"8",
+			"img": "http://oh193mswr.bkt.clouddn.com/home-variety_18.png",
+			"name":"杂志"
+		}
+	]
+}

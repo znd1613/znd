@@ -1,7 +1,12 @@
 
 	angular.module('projectDemo',['ui.router','angularCSS',
-		'projectDemo.homePage'])	
+		'projectDemo.homePage',
+		'projectDemo.second_frame'])	
 		.config(function($stateProvider,$urlRouterProvider){
+
+
+		 $urlRouterProvider.otherwise('/home')
+
 
 		  $stateProvider
 		  .state({
@@ -11,7 +16,7 @@
 		    templateUrl:'app/models/freeWalker/register.html'
 		    // controller:'homeCtrl'
 		  })
-		  $urlRouterProvider.otherwise('/home')
+		 
 		})
 		// 点击切换侧边栏隐藏或者出现
 		.controller("ctr1",function($scope,$location){
@@ -33,8 +38,9 @@
    			}
    			// 点击头部左侧图标，统一回到首页部分
    			$scope.backClick=function(){
-   				$location.url('');
+   				$location.url('/home');
    			}
+
 		})
 
 
