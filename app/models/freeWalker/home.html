@@ -1,26 +1,30 @@
     <!-- 首页部分开始 -->
 	
-		<div class="swiper-container">
+		<div class="swiper-container" ng-controller="ctrl2">
 		    <div class="swiper-wrapper">
 		        <div class="swiper-slide"><img src="images/home_banner.jpg"></div>
+		        <div class="swiper-slide"><img src="images/home_banner2.jpg"></div>
+		        <div class="swiper-slide"><img src="images/home_banner3.jpg"></div>
+		        <div class="swiper-slide"><img src="images/home_banner4.jpg"></div>
+		        <div class="swiper-slide"><img src="images/home_banner5.jpg"></div>
 		    </div>
 		    <!-- 如果需要分页器 -->
-		    <!-- <div class="swiper-pagination"></div> -->
+		    <div class="swiper-pagination"></div>
 		    
 		    <!-- 如果需要导航按钮 -->
 		    <!-- <div class="swiper-button-prev"></div>
 		    <div class="swiper-button-next"></div> -->
 		</div>
 		<!-- 目的地探索部分开始 -->
-		<form action="#" method="get" class="destination">
+		<form action="#" method="get" class="destination" ng-controller="cbl">
 			<h2>目的地探索</h2>
-			<input type="text" name="" placeholder="目的地/酒店/邮轮">
+			<input type="text" name="" placeholder="目的地/酒店/邮轮" class="mudi">
 			<div class="stay">
 				<div class="put_up">
 					<p>
 						入住
 					</p>
-					<input type="date" name="" >
+					<input type="date" name=""  class="check_in">
 				</div>
 				<div class="check_out">
 					<p>
@@ -28,43 +32,43 @@
 					</p>
 					<input type="date" name="" >
 				</div>
-				<input type="submit" name="" value="搜索">
+				<input type="submit" name="" value="搜索" class="check_out">
 			</div>
 		</form>
 		<!-- 旅游类型部分开始 -->
-		<div class="variety">
-			<ul class="variety_1">
-				<li ui-sref="destination">
+		<div class="variety" >
+			<ul class="variety_1" >
+				<li ui-sref="second_frame.destination">
 					<img src="images/home-variety_03.png">
 					<span>目的地</span>
 				</li>
-				<li ui-sref="praise">
+				<li ui-sref="second_frame.praise">
 					<img src="images/home-variety_05.png">
 					<span>赞品订制</span>
 				</li>
-				<li ui-sref="freeWalker">
+				<li  ui-sref="second_frame.freeWalker">
 					<img src="images/home-variety_07.png">
 					<span>海外自由行</span>
 				</li>
-				<li ui-sref="villa">
+				<li ui-sref="second_frame.villa">
 					<img src="images/home-variety_09.png">
 					<span>别墅</span>
 				</li>
 			</ul>
 			<ul class="variety_2">
-				<li ui-sref="cruise">
+				<li ui-sref="second_frame.cruise">
 					<img src="images/home-variety_15.png">
 						<span>邮轮</span>
 				</li>
-				<li ui-sref="holiday">
+				<li ui-sref="second_frame.holiday">
 					<img src="images/home-variety_15_03.png">
 						<span>国内短假</span>
 				</li>
-				<li ui-sref="customization">
+				<li ui-sref="second_frame.customization">
 					<img src="images/home-variety_17.png">
 						<span>私人定制</span>
 				</li>
-				<li ui-sref="magazine">
+				<li ui-sref="second_frame.magazine">
 					<img src="images/home-variety_18.png">
 						<span>杂志</span>
 				</li>

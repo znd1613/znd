@@ -9,62 +9,7 @@ angular.module('projectDemo.homePage',[])
     templateUrl:'app/models/freeWalker/home.html'
     // controller:'homeCtrl'
   })
-  .state({
-    name:'freeWalker',
-    url:'/freeWalker',
-    css:'app/models/freeWalker/freeWalker.css',
-    templateUrl:'app/models/freeWalker/freeWalker.html'
-    // controller:'homeCtrl'
-  })
-  .state({
-    name:'villa',
-    url:'/villa',
-    css:'app/models/freeWalker/villa.css',
-    templateUrl:'app/models/freeWalker/villa.html'
-    // controller:'homeCtrl'
-  })
-  .state({
-    name:'cruise',
-    url:'/cruise',
-    css:'app/models/cruise/cruise.css',
-    templateUrl:'app/models/cruise/cruise.html'
-    // controller:'homeCtrl'
-  })
-  .state({
-    name:'holiday',
-    url:'/holiday',
-    css:'app/models/cruise/holiday.css',
-    templateUrl:'app/models/cruise/holiday.html'
-    // controller:'homeCtrl'
-  })
-  .state({
-    name:'particulars',
-    url:'/particulars',
-    css:'app/models/cruise/particulars.css',
-    templateUrl:'app/models/cruise/particulars.html'
-    // controller:'homeCtrl'
-  })
-  .state({
-    name:'sailing',
-    url:'/sailing',
-    css:'app/models/cruise/sailing.css',
-    templateUrl:'app/models/cruise/sailing.html'
-    // controller:'homeCtrl'
-  })
-  .state({
-    name:'destination',
-    url:'/destination',
-    css:'app/models/bourn/destination.css',
-    templateUrl:'app/models/bourn/destination.html'
-    // controller:'homeCtrl'
-  })
-  .state({
-    name:'praise',
-    url:'/praise',
-    css:'app/models/bourn/praise.css',
-    templateUrl:'app/models/bourn/praise.html'
-    // controller:'homeCtrl'
-  })
+
   .state({
     name:'budan',
     url:'/budan',
@@ -107,5 +52,27 @@ angular.module('projectDemo.homePage',[])
     templateUrl:'app/models/customization/destination1.html'
     // controller:'homeCtrl'
   })
+ 	// 二级页面框架
+
 })
+.controller("ctrl2",function($scope){
+	var mySwiper = new Swiper('.swiper-container', {
+		loop: true,
+		autoplay: 2000,//可选选项，自动滑动
+		autoplayDisableOnInteraction:false,
+		speed:1000,//滑动速度
+		pagination : '.swiper-pagination',
+		observe:true,// 启动动态检查器，当改变swiper的样式（例如隐藏/显示）或者修改swiper的子元素时，自动初始化swiper。
+		observeParents:true//将observe应用于Swiper的父元素。当Swiper的父元素变化时，例如window.resize，Swiper更新。
+					
+	})
+})
+.controller("cbl",function($scope){
+	$(".mudi").on("touchstart",function(){
+		$(".stay").show(1000);
+	})
+})
+
+
+
 

@@ -4,7 +4,7 @@ body{
 #box{
 	width: 18.4rem;
 	display: flex;
-	/*margin-left: -8.4rem;*/
+	position: relative;
 }
 .text1{
 	animation: nth 1s;
@@ -159,23 +159,28 @@ body{
 	border-radius: 0.533333rem;
 }
 /*侧边栏连接部分开始*/
-.interlinkage{
+.interlinkage_1{
+	width: 100%;
+	margin-top: 0.266667rem;
+}
+.interlinkage_1_1{
 	width: 100%;
 	/*padding-left: 0.453333rem;*/
 	border-top: 1px solid #d8d8d8;
 }
-.interlinkage>li{
+.interlinkage_1_1>li{
 	height: 0.88rem;
 	border-bottom: 1px solid #d8d8d8;
 	background: #ffffff;
 	line-height: 0.88rem;
 	text-indent: 0.453333rem;
+	color: #7f7f7f;	
 }
-.interlinkage>li span{
+.interlinkage_1_1>li span{
 	float: right;
 	margin-right: 0.186667rem;
 }
-.interlinkage>li:last-of-type{
+.interlinkage_1_1>li:last-of-type{
 	margin-top: 0.213333rem;
 	border-top: 1px solid #d8d8d8;
 }
