@@ -1,26 +1,30 @@
 
    <p class="header"></p>
-   <div id="cruise">
+   <div id="cruise" ui-view>
    	 <div class="cruiseBanner">
    	 	<img src="images/banner-jidi.jpg">
    	 </div>
-   	 <div class="details">
-   	 	<div class="oneItem">
-   	 		<a ui-sref="sailing">
-   	 			<img src="images/key2_2002_bundle.jpg!660x240-w117.jpeg"   alt="【大航海时代】水晶合韵号13天12晚西地中海浪漫热情之旅" class="topic" />	
-   	 				<h2 class="motif">【大航海时代】水晶合韵号13天12晚西地中海浪漫热情之旅</h2>
+   	 <div class="details" ng-controller="cruiseCtrl">
+   	 	<div class="details-Items">
+   	 		
+   	 
+   	 	<div class="oneItem" ng-repeat="x in data">
+   	 		<a ui-sref="second_frame.cruise.sailing">
+   	 			<img ng-src="{{x.img}}" alt="【大航海时代】水晶合韵号13天12晚西地中海浪漫热情之旅" class="topic" />	
+   	 				<h2 class="motif">{{x.headline}}</h2>
    	 		</a>
    	 	
-   	 		<div class="scenery gray-introduce">
-                        极致邮轮体验 - 奢华翘楚水晶合韵号邮轮倾尽世间奇珍于眼前，让您享受极致尊贵的礼遇                    </div>
+   	 		<div class="scenery gray-introduce" ng-bind='x.scenery'>
+                        </div>
                         <div class="activity gray-introduce">
-                        无上饕餮盛宴 - 水晶合韵号为您准备了无限惊喜，以精美的世界美食满足您味蕾的严苛要求                    </div>
-                        <div class="experience gray-introduce">
-                        巡航西地中海 - 本次航程将带您巡游西地中海沿岸经典欧洲城市，重新发现这里的热情浪漫                    </div>
+                        {{x.activity}}              </div>
+                        <div class="experience gray-introduce">{{x.experience}}
+                                         </div>
                         
    	 	<a href="##" class="button" ui-sref="sailing"><span>¥</span>
-   	 	<strong>33.500</strong><small> / 人起</small><div class="round-icon"><span class="icon-arrow-right"></span></div></a>
+   	 	<strong>{{x.price}} </strong><small> / 人起</small><div class="round-icon"><span class="icon-arrow-right"></span></div></a>
    	 	</div>
+ </div>
       <div class="cruise-contact-info">
          	 <h4 class="presentation">赞那度，您的奢华邮轮旅行专家！</h4>
          	 <p>无论您想追逐地中海阳光，聆听北欧童话，或探索阿拉斯加冰川……</br>无论您想与爱人共度浪漫海上蜜月，或是与家人密友分享精彩假期，赞那度都能为您实现！</p>
