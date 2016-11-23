@@ -94,7 +94,7 @@ body{
 .centre{
 	width: 8.4rem;
 	background: #e4e4e4;
-	/*display: none;*/
+	display: none;
 }
 .centre{
 	width: 8.4rem;
@@ -125,6 +125,13 @@ body{
 .join_me p em{
 	font-style: normal;
 	color: #cb5977;
+}
+.success{
+	display: none;
+}
+.exit_login{
+	text-align: center;
+	display: none;
 }
 .personal_center{
 	height: 1.333333rem;

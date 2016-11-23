@@ -55,7 +55,8 @@ angular.module('projectDemo.homePage',[])
  	// 二级页面框架
 
 })
-.controller("ctrl2",function($scope){
+.controller("ctrl2",function($scope,$http){
+  // 轮播图
 	var mySwiper = new Swiper('.swiper-container', {
 		loop: true,
 		autoplay: 2000,//可选选项，自动滑动
@@ -66,12 +67,40 @@ angular.module('projectDemo.homePage',[])
 		observeParents:true//将observe应用于Swiper的父元素。当Swiper的父元素变化时，例如window.resize，Swiper更新。
 					
 	})
+// 入住时间的显示
+  $(".mudi").on("touchstart",function(){
+    $(".stay").show(1000);
+  })
+
+// 品介优选的json
+  $http.get("json/home_json/character.json")
+  .success(function(req){ 
+    var str="";
+    var m=1;
+    var x=0;
+    function show(x,m){
+      $.each(req.data, function(i,elem) {
+        if (i>=x&&i<=m) {
+          str+='<li><img src="'+elem.img+'">'
+          str+='<p>'+elem.name+'</p></li>'
+        }
+       });
+       $(".choice ul").html(str)
+    }
+    show(x,m);
+     $("#more_character").click(function(){
+        x=m+1;
+        m+=4;
+        show(x,m);
+       if (m==req.data.length-1) {
+        $("#more_character").hide();
+        return;
+       }
+     })
+  })
+
 })
-.controller("cbl",function($scope){
-	$(".mudi").on("touchstart",function(){
-		$(".stay").show(1000);
-	})
-})
+
 
 
 

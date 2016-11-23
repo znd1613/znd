@@ -1,21 +1,9 @@
 
 	angular.module('projectDemo',['ui.router','angularCSS',
-		'projectDemo.homePage',
-		'projectDemo.second_frame'])	
+		'projectDemo.homePage','projectDemo.second_frame','projectDemo.register'])	
 		.config(function($stateProvider,$urlRouterProvider){
 
-
 		 $urlRouterProvider.otherwise('/home')
-
-
-		  $stateProvider
-		  .state({
-		    name:'register',
-		    url:'/register',
-		    css:'app/models/freeWalker/register.css',
-		    templateUrl:'app/models/freeWalker/register.html'
-		    // controller:'homeCtrl'
-		  })
 		 
 		})
 		// 点击切换侧边栏隐藏或者出现
@@ -25,6 +13,7 @@
 			$scope.istext3=true;
 			$scope.lsClick = function(){
 				if ($scope.istext3==true) {
+					$(".centre").show();
 					$scope.istext3=false;
 					$scope.istext1=false;
 					$scope.istext2=true;
@@ -41,6 +30,25 @@
    				$location.url('/home');
    			}
 
+		})
+		// 当注册成功的时候，侧边栏会自动显示最新注册用户名，同时注册登录模块消失
+		.controller("reg_success",function($scope,$location){
+			// localStorage.clear();
+				// location.reload(true);
+			// 	if (localStorage.length!=0) {
+			// 		var key=localStorage.key(localStorage.length-1);
+			// 		var value=JSON.parse(localStorage.getItem(key));
+			// 		$(".join").hide();
+			// 		$(".success").show();
+			// 		$(".input_user").html(value.user_name);
+			// 		$(".exit_login").show();
+			// }
+			$(".exit_login").on("touchstart",function(){
+				$(".join").show();
+				$(".success").hide();
+				$(".input_user").html("");
+				$(".exit_login").hide();
+			})
 		})
 
 

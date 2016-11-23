@@ -39,12 +39,15 @@
             </div>
         </div> -->
       </div>
-      <div class="centre">
+      <div class="centre" ng-controller="reg_success">
             <header>
               <div class="join_me">
                 <p><span>加入会员俱乐部</span></p>
                 <p><span>乐享各种优惠</span></p>
-                <p><span>点我马上 <em>登陆</em> 或 <em ui-sref="register" ng-click="lsClick()">注册</em></span></p>
+                <p class="join"><span>点我马上 <em ui-sref="register.login" ng-click="lsClick()">登陆</em> 或 <em ui-sref="register.resgiter_1" ng-click="lsClick()">注册</em></span></p>
+                <p class="success">
+                  <span>欢迎回来 <em class="input_user">我登陆了</em></span>
+                </p>
               </div>
               <div class="personal_center">
                 <div class="login_img">
@@ -82,6 +85,7 @@
               <li>活动</li>
               <li>关于赞拿度<span>></span></li>
               <li>切换到桌面版浏览</li>
+              <li class="exit_login">退出登录</li>
             </ul>
           </div>
       </div>
@@ -90,6 +94,9 @@
     <script src="app/models/freeWalker/home.js"></script>
     <script src="app/models/second_frame.js"></script>
     <script src="app/models/freeWalker/villa.js"></script>
+    <script src="app/models/freeWalker/register.js"></script>
+    <script src="app/models/freeWalker/r_or_l/resgiter_1.js"></script>
+    <script src="app/models/freeWalker/r_or_l/login.js"></script>
     <script type="text/javascript">
       document.documentElement.style.fontSize=innerWidth/10+"px";
         window.onresize=function(){
