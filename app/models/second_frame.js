@@ -1,4 +1,4 @@
-angular.module('projectDemo.second_frame',['projectDemo.villa'])
+angular.module('projectDemo.second_frame',['projectDemo.villa','projectDemo.cruisePage','projectDemo.holidayPage'])
 
 .controller("ct1",function($scope){
      $scope.isp1=false;
@@ -48,20 +48,20 @@ angular.module('projectDemo.second_frame',['projectDemo.villa'])
   })
 
     // 邮轮
-    .state({
-    name:'second_frame.cruise',
-    url:'/cruise',
-    css:'app/models/cruise/cruise.css',
-    templateUrl:'app/models/cruise/cruise.html'
-  })
+  //   .state({
+  //   name:'second_frame.cruise',
+  //   url:'/cruise',
+  //   css:'app/models/cruise/cruise.css',
+  //   templateUrl:'app/models/cruise/cruise.html'
+  // })
 
     // 国内短假
-    .state({
-    name:'second_frame.holiday',
-    url:'/holiday',
-    css:'app/models/cruise/holiday.css',
-    templateUrl:'app/models/cruise/holiday.html'
-  })
+//  .state({
+//  name:'second_frame.holiday',
+//  url:'/holiday',
+//  css:'app/models/cruise/holiday.css',
+//  templateUrl:'app/models/cruise/holiday.html'
+//})
 
     // 私人定制
     .state({

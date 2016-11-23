@@ -34,7 +34,7 @@ ul.holiday-simple li{
     width:8.0rem;
     margin: 0 auto;
     margin-top: -0.08rem;
-    height: 0.67rem;
+    height: 0.65rem;
     text-align: center;
     color: #fff;
     position: relative;
@@ -47,6 +47,13 @@ ul.holiday-simple li{
 #holiday .original{
 	color: #999;
     display: inline-block;
+    margin-left: 0.133333rem;
+    text-decoration: line-through;
+    float: left;
+}
+#holiday .original1{
+	color: #999;
+    display: inline-block;
     margin-right: 0.133333rem;
     text-decoration: line-through;
 }
@@ -55,20 +62,35 @@ ul.holiday-simple li{
 	width: 9.386667rem;
     border: 0.053333rem solid  #cb5977;
 	text-align: center;
-	color:  #cb5977;
+	color:  #cb5977  !important;
 	margin:0.266667rem auto;
 	padding: 0.133333rem;
     height: 1.28rem;
     line-height: 1.05rem;
+    text-decoration: none;
+    
 
 	
 
 }
+.holiday-loading{
+	display: block;
+	width: 9.386667rem;
+    border: 0.053333rem solid #999;
+	text-align: center;
+	color:#999  !important;
+	margin:0.266667rem auto;
+	padding: 0.133333rem;
+    height: 1.28rem;
+    line-height: 1.05rem;
+    text-decoration: none;
+}
 .icon-refresh:before {
     content: "\4f";
 }
-.oneItem{
+#holiday .oneItem{
 	border-bottom:0.01rem dotted #999;
+    margin-top: 0.266667rem;
 }
 
 .percent-circle{
