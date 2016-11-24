@@ -1,12 +1,12 @@
-	<div id="magazine"  ng-controller='maga' ui-view>
+	<div id="magazine"  ui-view ng-controller='magaArticle'>
 		
 	
-	<section class="bg-color-light-blue">
-			<div class="padding-top-15 padding-bottom-15 category-items text-center">
-				<a class="color-white " ui-sref="second_frame.magazine">全部</a>
+	<section class="bg-color-light-blue" >
+			<div class="padding-top-15 padding-bottom-15 category-items text-center" >
+				<a class="color-white " ui-sref="second_frame.magazine" ng-click="clickAll()">全部</a>
 
-				<a class="color-white " ui-sref="second_frame.magazine">旅行</a>
-				<a class="color-white " ui-sref="second_frame.magazine">时尚</a>
+				<a class="color-white " ui-sref="second_frame.magazine" ng-click="clickLx()">旅行</a>
+				<a class="color-white " ui-sref="second_frame.magazine" ng-click="clickSs()">时尚</a>
 				<a class="color-white " ui-sref="second_frame.magazine">美食</a>
 				<a class="color-white " ui-sref="second_frame.magazine">设计</a>
 				<a class="color-white " ui-sref="second_frame.magazine">热点</a>
@@ -18,13 +18,13 @@
 			</div>
 		</section>
 		<section >
-			<div class="container">
-				<h3 class="color-blue margin-bottom-10">热门文章</h3>
-				<div class="article-item" ui-sref="second_frame.magazine.article">
+			<div class="container" >
+				<h3 class="color-blue margin-bottom-10">{{title}}</h3>
+				<div class="article-item" ui-sref="second_frame.magazine.article" ng-repeat="x in arr">
 					<a ui-sref="second_frame.magazine.article" class="block relative">
-						<img src="images/1.jpg" class="scroll-loading" width="100%">
+						<img src="{{x.img}}" class="scroll-loading" width="100%">
 						<div class="title relative">
-							<h4 class="margin-bottom-5 name-cn">最美味的火腿在西班牙</h4>
+							<h4 class="margin-bottom-5 name-cn">{{x.name}}</h4>
 							<div class="color-gray counter">7个月前</div>
 						</div>
 						<span class="arrow-right"></span>
@@ -32,7 +32,7 @@
 
 					<hr class="separator solid margin-top-15 margin-bottom-15">
 				</div>
-				<div class="article-item">
+				<!--<div class="article-item">
 					<a ui-sref="second_frame.magazine.article" class="block relative">
 						<img src="images/1.jpg" data-imagesrc="images/1.jpg" class="scroll-loading" width="100%">
 						<div class="title relative">
@@ -138,8 +138,8 @@
 						<span class="arrow-right"></span>
 					</a>
 
-				</div>
 				<hr class="separator dotted margin-top-20">
+				</div>-->
 			</div>
 		</section>
 

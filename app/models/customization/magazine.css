@@ -300,6 +300,9 @@ a img {
     overflow: hidden;
     padding: 0 15px 0 130px;
 }
+.article-item .title h4{
+	white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
 .article-item .counter {
     position: absolute;
     bottom: 0;
