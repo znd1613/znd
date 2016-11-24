@@ -62,7 +62,10 @@
 							<li>
 								<div class="input-checkbox gray">
 									<label for="EnquiryCustomizedTrip_date_flexible">
-										<div class="input left margin-right-10"></div>
+										<!--<div class="input left margin-right-10">-->
+											<input type="checkbox" name="rqtz" id="rqtz" value="点击" class="input left margin-right-10"/>
+										<!--</div>-->
+										
 										<div class="caption left">我的日期可以弹性调整</div>
 										<div class="clearfix"></div>
 									</label>
@@ -276,21 +279,23 @@
 							</li>
 							<li>
 								<span class="required">*</span>
-								<input class="input-text" placeholder="手机" autocorrect="off" spellcheck="false" autocapitalize="off" autocomplete="tel" name="Enquiry[phone_number]" id="Enquiry_phone_number" type="number" maxlength="30" value="">
+								<input class="input-text" placeholder="手机" autocorrect="off" spellcheck="false" autocapitalize="off" autocomplete="tel" name="Enquiry[phone_number]" id="Enquiry_phone_number" type="number" ng-maxlength="30" ng-minlength="5" value="">
 								<div class="errorMessage" id="Enquiry_phone_number_em_" style="display:none"></div>
 							</li>
 							<li>
 								<span class="required">*</span>
-								<input class="input-text" placeholder="邮箱" autocorrect="off" spellcheck="false" autocapitalize="off" autocomplete="email" name="Enquiry[email_address]" id="Enquiry_email_address" type="text" maxlength="200">
+								<input class="input-text" placeholder="邮箱" autocorrect="off" spellcheck="false" autocapitalize="off" autocomplete="email" name="Enquiry[email_address]" id="Enquiry_email_address" type="text"  maxlength="200">
 								<div class="errorMessage" id="Enquiry_email_address_em_" style="display:none"></div>
 							</li>
 						</ul>
 						<hr class="separator solid margin-bottom-20 margin-top-20">
 						<div class="margin-bottom-20 clear">
 							<div class="input-checkbox gray">
-								<input name="User[sales_newsletter]" id="User_sales_newsletter" value="1" type="checkbox">
+								
 								<label for="User_sales_newsletter">
-									<div class="input left margin-right-10"></div>
+									<!--<div class="input left margin-right-10">-->
+										<input class="input left margin-right-10" name="User[sales_newsletter]" id="User_sales_newsletter" value="1" type="checkbox">
+									<!--</div>-->
 									<div class="caption left">我愿意订制newsletter</div>
 									<div class="clearfix"></div>
 								</label>

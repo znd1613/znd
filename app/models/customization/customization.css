@@ -129,6 +129,11 @@
     height: 0.4rem;
     margin-top: 0.08rem;
 }
+#rqzt{
+	width: 0.4rem;
+    height: 0.4rem;
+    margin-top: 0.08rem;
+}
 .relative{
 	position: relative;
 }
@@ -139,13 +144,13 @@
     margin-right: 0.26666666666666666rem;
 }
 .left {
-    display: block;
+    : block;
     float: left;
 }
 
-.input-checkbox input, .input-radio input {
+/*.input-checkbox input, .input-radio input {
     display: none;
-}
+}*/
 
 
 
