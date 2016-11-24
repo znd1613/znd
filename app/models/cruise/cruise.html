@@ -1,0 +1,58 @@
+
+   <p class="header"></p>
+   <div id="cruise" ui-view>
+   	 <div class="cruiseBanner">
+   	 	<img src="images/banner-jidi.jpg">
+   	 </div>
+   	 <div class="details" ng-controller="cruiseCtrl">
+   	 	<div class="details-Items">
+   	 		
+   	 
+   	 	<div class="oneItem" ng-repeat="x in data">
+   	 		<a ui-sref="second_frame.cruise.sailing">
+   	 			<img ng-src="{{x.img}}" alt="【大航海时代】水晶合韵号13天12晚西地中海浪漫热情之旅" class="topic" />	
+   	 				<h2 class="motif">{{x.headline}}</h2>
+   	 		</a>
+   	 	
+   	 		<div class="scenery gray-introduce" ng-bind='x.scenery'>
+                        </div>
+                        <div class="activity gray-introduce">
+                        {{x.activity}}              </div>
+                        <div class="experience gray-introduce">{{x.experience}}
+                                         </div>
+                        
+   	 	<a href="##" class="button" ui-sref="sailing"><span>¥</span>
+   	 	<strong>{{x.price}} </strong><small> / 人起</small><div class="round-icon"><span class="icon-arrow-right"></span></div></a>
+   	 	</div>
+ </div>
+      <div class="cruise-contact-info">
+         	 <h4 class="presentation">赞那度，您的奢华邮轮旅行专家！</h4>
+         	 <p>无论您想追逐地中海阳光，聆听北欧童话，或探索阿拉斯加冰川……</br>无论您想与爱人共度浪漫海上蜜月，或是与家人密友分享精彩假期，赞那度都能为您实现！</p>
+         	 <p>心动即刻行动，告诉我们您心仪的目的地及旅行偏好，赞那度的专业旅行顾问<br>将为您度身定制最完美的奢华航程，创造终生难忘的极致邮轮度假体验!</p>
+         	 <div class="Infodetail">
+                      <div class="cruiseleft">
+                          <div>联系电话：</div>
+                          <div><a href="tel:8602163300350" rel="nofollow">+86 21 6330 0350</a></div>
+                      </div>
+                      <div class="cruiseright">
+                          <div>联系邮箱：</div>
+                          <div class="mail"><a href="mailto:package@zanadu.cn" rel="nofollow">package@zanadu.cn</a></div>
+                      </div>
+                      <div class="clearfix"></div>
+            </div>
+        <div class="text-center">
+                      <div>
+                          <div class="qr-wrapper">
+                              <img src="images/qr-code-w114.png" class="code">
+                              <h5 class="counselor">赞那度旅行顾问</h5>
+
+                              <div class="counselor-round-icon"><span class="icon-wechat"></span></div>
+                          </div>
+                      </div>
+                      <div class="qr-word">关注公众号，发送“邮轮”</div>
+          </div> 
+      </div>
+   	 
+   	</div>
+   
+  </div>

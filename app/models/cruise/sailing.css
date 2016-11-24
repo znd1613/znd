@@ -1,0 +1,138 @@
+@charset "utf-8";
+#sailing{
+	overflow: hidden;
+	color: #333;
+    font-size: 14px;
+    font-family: 'Montserrat', "Microsoft YaHei", Arial, sans-serif;
+    width: 100%;
+}
+.text-title{
+	font-size: 0.533333rem;
+	font-weight: normal;
+	margin-bottom: 0.266667rem;
+}
+#sailing .user-action.static {
+    float: left;
+    margin-right: 0.266667rem;
+}
+.particulars-mo{
+    background:#262F36 url(../../../images/bg-pattern-diag.png) repeat;
+    color: white;
+    height: 1.146667rem;
+    
+}
+.mo{
+    height: 1.06667rem;
+    background:url(../../../images/bg-image-white-light.png) top center no-repeat;
+    padding:0.266667rem;
+}
+
+#sailing .recommend, .wish {
+    width: 2.666667rem;
+    background: #b9d5ea;
+    text-align: center;
+    position: relative;
+}
+#sailing .wish {
+    background: #d9bdd4;
+    width: 2.666667rem;
+    background: #b9d5ea;
+    text-align: center;
+    position: relative;
+}
+#sailing .recommend {
+	margin-bottom: 0.266667rem;
+}
+#sailing .recommend .percent, .wish .number {
+    padding: 0.1rem;
+    font-family: 'Montserrat',Heiti,Arial,sans-serif;
+    color: #fff;
+    background: #749dbb;
+}
+#sailing .user-action strong {
+    font-size: 3.2em;
+    display: block;
+    margin: 0.266667rem 0;
+}
+#sailing .recommend small {
+    position: absolute;
+    right: 0.2rem;
+    top: 0.67rem;
+    font-size: 1em;
+    font-weight: normal;
+}
+#sailing .recommend p {
+    color: #749dbb;
+    padding: 0.08rem 0;
+}
+#sailing  .wish .number {
+    background: #a77fa1;
+}
+#sailing .wish {
+    background: #d9bdd4;
+}
+#sailing .wish p {
+    color: #a77fa1;
+}
+.synopsis{
+	width: 100%;
+	padding: 0.266667rem;
+}
+.cruise-desc .editor-content-table tr td:first-child {
+    text-align: right;
+    
+}
+.message{
+	text-align: right;
+	color: #333;
+	width: 2.666667rem;
+	vertical-align: top;
+}
+.expandable-content {
+    max-height: 20em;
+    overflow: hidden;
+}
+.emphasis{
+	color: #696969;
+}
+.titleEmp{
+	font-weight: normal;
+	font-size: 0.506667rem;
+}
+.show-more-link{
+	width: 100%;
+
+}
+.show-more-link {
+    display: block;
+    border: 0.053333rem solid #CB5977;
+    text-align: center;
+    padding: 0.213333rem 0;
+    margin-top: 0.266667rem;
+    color:  #CB5977;
+}
+a.show-more-link:hover {
+    text-decoration: underline;
+}
+.show-more-link:after {
+    content: "\5b";
+    font-family: 'Zanadu-icons';
+    margin-left: 0.133333rem;
+}
+.icon-cruise:before {
+    content: "\52";
+    font-size: 19px;
+}
+.icon-marker:before {
+    content: "\63";
+    font-size: 19px;
+}
+.button-submit{
+	background: #CB5977;
+	float: right;
+	margin-top: 0.213333rem;
+    padding: 0.266667rem 0.666667rem;
+    border-radius: 0.106667rem;
+    color: white;
+    margin-right: 0.266667rem;
+}

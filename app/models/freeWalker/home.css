@@ -1,0 +1,424 @@
+
+/*banner图部分开始*/
+.swiper-container{
+	width: 100%;
+	height: 4.533333rem;
+	overflow: hidden;
+}
+ .swiper-wrapper{
+	width: 500%;
+	height: 4.533333rem;
+	display: flex;
+}
+ .swiper-slide{
+	width: 20%;
+	height: 4.533333rem;
+}
+ .swiper-slide>img{
+	width: 100%;
+	height: 4.533333rem;
+}
+/*目的地探索部分开始*/
+.destination{
+	width: 100%;
+	margin-top: 0.4rem;
+	padding: 0 0.266667rem;
+}
+.destination h2{
+	color: #8ca6c5;
+	height: 0.693333rem;
+	line-height: 0.693333rem;
+}
+.destination input[type="text"]{
+	width: 100%;
+	height: 1.066667rem;
+	border: none;
+	background:#eaeaea  url(../../../images/home_search_03.png) 0.266667rem center no-repeat;
+	background-size: 0.48rem 0.48rem;
+	padding-left: 0.88rem;
+}
+.stay{
+	width: 100%;
+	margin-top: 0.266667rem;
+	display: none;
+	overflow: hidden;
+}
+.stay p{
+	height: 0.64rem;
+	line-height: 0.64rem;
+	font-size: 0.373333rem;
+	color: #8ca6c2;
+}
+.put_up{
+	width: 48%;
+	float: left;
+}
+.put_up input[type="date"]{
+	width: 100%;
+	height: 1.066667rem;
+	border: none;
+	background:#eaeaea url(../../../images/home_zhusu_03.png) 0.266667rem center no-repeat;
+	background-size: 0.48rem 0.48rem;
+	padding-left: 0.853333rem;
+}
+.check_out{
+	width: 48%;
+	float: right;
+	margin-bottom: 0.293333rem;
+}
+.check_out input[type="date"]{
+	width: 100%;
+	background: #eaeaea;
+	height: 1.066667rem;
+	border: none;
+	background:#eaeaea url(../../../images/home_zhusu_03.png) 0.266667rem center no-repeat;
+	background-size: 0.48rem 0.48rem;
+	padding-left: 0.853333rem;
+}
+.stay input[type="submit"]{
+	display: block;
+	clear: both;
+	width: 100%;
+	height: 1.066667rem;
+	border: none;
+	background: #cb5977;
+	color: #fff;
+
+}
+/*旅游类型部分开始*/
+.variety{
+	width: 100%;
+	margin-top: 0.533333rem;
+}
+.variety ul li{
+	width: 1.866667rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.variety ul:first-of-type{
+	margin-bottom: 0.266667rem;
+}
+.variety ul{
+	display: flex;
+	justify-content: space-around;
+}
+.variety ul li>img{
+	width: 1.28rem;
+	height: 1.28rem;
+	display: block;
+}
+.variety ul li>span{
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+	font-size: 0.373333rem;
+	color: #999999;
+	margin: 0.133333rem 0 0.266667rem 0;
+}
+/*热销部分开始*/
+.hot_sells{
+	position: relative;
+}
+.pd_common{
+	padding: 0.346667rem 0.266667rem;
+	width: 100%;
+	border-bottom: 1px dashed #999999;
+}
+.h_common{
+	color: #9db3cb;
+	height: 0.96rem;
+	line-height: 0.96rem;
+}
+.h_common>span{
+	float: right;
+	color: #999999;
+	font-size: 0.373333rem;
+}
+.hot_sells>img{
+	width: 100%;
+	height: 3.44rem;
+}
+.hot_sells>div{
+	width: 100%;
+	height: 0.8rem;
+	background: #cb5977;
+	padding-left: 0.266667rem;
+	color: #fff;
+	line-height: 0.8rem;
+}
+.hot_sells>p{
+	position: absolute;
+	left: 0.266667rem;
+	top: 2.666667rem;
+	color: #cb5977;
+	width: 50%;
+	height: 0.746667rem;
+	border-radius: 0.4rem;
+	background: #fff;
+	line-height: 0.746667rem;
+	text-align: center;
+}
+.show_common{
+	display: flex;
+	flex-wrap:wrap;
+	justify-content: space-around;
+}
+.show_common li{
+	width: 4.533333rem;
+	margin-bottom: 0.32rem;
+}
+.show_common li>img{
+	width: 100%;
+	height: 3.466667rem;
+	margin-bottom: 0.133333rem;
+}
+.show_common li>p{
+	font-size: 0.373333rem;
+	color: #9d9d9d;
+	height: 1.493333rem;
+	overflow: hidden;
+	line-height: 0.533333rem;
+}
+.more{
+	width: 4.16rem;
+	height: 1.066667rem;
+	border: 1px solid #cb5977;
+	border-radius: 0.533333rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+	background: #fff;
+}
+.more>img{
+	width: 0.426667rem;
+	height: 0.24rem;
+	margin-left: 0.106667rem;
+}
+.choiceness{
+	background: #e3eef5;
+}
+/*热门目的地部分开始*/
+.hot_city{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.hot_city li {
+	width: 2.986667rem;
+}
+.hot_city li img{
+	width: 100%;
+	height: 2.986667rem;
+	border-radius: 50%;
+}
+.hot_city li p{
+	width: 100%;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	text-align: center;
+	font-size: 0.373333rem;
+	color: #999999;
+}
+.appStore{
+	width: 100%;
+	background: #e3eef5;
+	padding: 0.373333rem 0.24rem 0.24rem 0.266667rem;
+}
+.appStore>img{
+	width: 100%;
+	height: 3.466667rem;
+}
+.choiceness,.choice,.hot_destination,.appStore,.firee_tranval{
+	border-bottom: none;
+}
+.short_villa_holiday>img{
+	width: 100%;
+	height: 3.893333rem;
+}
+.short_villa_holiday p{
+	font-size: 0.373333rem;
+	color: #999999;
+}
+/*底部开始*/
+.introduce{
+	padding: 1.013333rem 0.533333rem 0 0.533333rem;
+	background:#cbe2f0 url(../../../images/home_foot_bg.png)right 0 no-repeat;
+	background-size: 3.466667rem 5.013333rem;
+}
+.introduce>img{
+	width: 4.88rem;
+	height: 0.933333rem;
+	margin-bottom: 0.613333rem;
+}
+.introduce>p{
+	line-height: 0.48rem;
+	color: #46484a;
+}
+.introduce>p:nth-of-type(3){
+	margin-bottom: 0.533333rem;
+}
+/*微信和微博*/
+.media{
+	background:url(../../../images/bg_bottom_bird_logo.png)right 0 no-repeat, linear-gradient(#eef6fa,#ffffff,#f6fafd);
+	background-size: 5.253333rem 4.853333rem;
+	overflow: hidden;
+	padding: 0.533333rem;
+}
+.media img{
+	width: 0.853333rem;
+	height: 0.853333rem;
+	margin-right: 0.266667rem;
+}
+.media p{
+	min-width: 3.466667rem;
+	line-height: 0.48rem;
+}
+.media p:nth-of-type(2){
+	margin-bottom: 0.4rem;
+}
+.WeChat{
+	overflow: hidden;
+}
+.WeChat>img{
+	float: left;
+}
+.WeChat .WeChat-content{
+	float: left;
+}
+.microblog{
+	clear: both;
+	overflow: hidden;
+	margin-top: 0.346667rem;
+}
+.microblog>img{
+	float: left;
+}
+.microblog .microblog-content{
+	float: left;
+}
+/*联系方式开始*/
+.contact_information{
+	width: 100%;
+	background: linear-gradient(#edf5fa,#d9eaf4,#cde4f0);
+	padding-top: 0.533333rem;
+}
+.contact_information p{
+	text-align: center;
+	color: #797979;
+	line-height: 0.533333rem;
+}
+.contact_information .phone{
+	font-size: 0.48rem;
+	font-weight: bold;
+	line-height: 0.693333rem;
+}
+.tel1{
+	margin-bottom: 0.266667rem;
+}
+.collaborate>p:last-of-type{
+	color: #cb5977;
+}
+.company_message img:first-of-type{
+	width: 1.76rem;
+	height: 1.066667rem;
+	margin-right: 0.133333rem;
+}
+.company_message img:last-of-type{
+	width: 1.066667rem;
+	height: 1.066667rem;
+}
+.company_message p:nth-of-type(3){
+	margin-top: 0.32rem;
+}
+.company_message p:last-of-type{
+	color: red;
+}
+/*侧边栏部分开始*/
+/*.centre{
+	width: 8.4rem;
+	background: #e4e4e4;
+}
+.centre header{
+	width: 100%;
+	height: 2.56rem;
+	background: url(../../../images/bg-image-nav-guest.jpg) no-repeat;
+	background-size: 100% 100%;
+	display: flex;
+	justify-content: space-between;
+	padding-left: 0.48rem;
+	align-items: center;
+	
+}
+.join_me p span{
+	display: inline-block;
+	padding: 0 0.213333rem;
+	height: 0.613333rem;
+	line-height: 0.613333rem;
+	background: #2d271e;
+	color: #fff;
+}
+.join_me p:nth-of-type(2){
+	margin: 0.106667rem 0;
+}
+.join_me p em{
+	font-style: normal;
+	color: #cb5977;
+}
+.personal_center{
+	height: 1.333333rem;
+	width: 1.706667rem;
+	display: flex;
+	align-items: center;
+}
+.personal_center span{
+	color: #fff;
+	margin-left: 0.08rem;
+}
+.login_img{
+	width: 1.333333rem;
+	height: 1.333333rem;
+	border-radius: 50%;
+	border: 0.08rem solid #fff;
+	background: #304d64;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.login_img>img{
+	width: 0.666667rem;
+	height: 0.666667rem;
+}
+.alone{
+	
+	margin-top: 0;
+	padding: 0.266667rem 0.4rem;
+}
+.alone input[type="text"],.alone input[type="date"],.alone input[type="submit"]{
+	border-radius: 0.533333rem;
+}
+/*侧边栏连接部分开始*/
+.interlinkage{
+	width: 100%;
+	/*padding-left: 0.453333rem;*/
+	border-top: 1px solid #d8d8d8;
+}
+.interlinkage>li{
+	height: 0.88rem;
+	border-bottom: 1px solid #d8d8d8;
+	background: #ffffff;
+	line-height: 0.88rem;
+	text-indent: 0.453333rem;
+}
+.interlinkage>li span{
+	float: right;
+	margin-right: 0.186667rem;
+}
+.interlinkage>li:last-of-type{
+	margin-top: 0.213333rem;
+	border-top: 1px solid #d8d8d8;
+}*/
+

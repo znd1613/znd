@@ -1,0 +1,141 @@
+@charset "utf-8";
+#holiday{
+	color: #333;
+    font-size: 14px;
+    font-family: 'Montserrat', "Microsoft YaHei", Arial, sans-serif;
+    width: 100%;
+}
+.content-introduce{
+	width: 100%;
+	height: 4.453333rem;
+    padding: 0.266667rem;
+    margin: 0 auto;
+    box-shadow: 0 0.133333rem 0.266667rem rgba(0, 0, 0, 0.20);
+    margin-bottom: 1.013333rem;
+}
+.holiday-meal{
+	margin: 0.266667rem 0;
+	font-size: 0.373333rem;
+
+}
+.holiday-simple{
+	margin-left: 0.266667rem;
+}
+ul.holiday-simple li{
+    list-style: none;
+    padding-left:0.266667rem;
+    background: url("../../../images/list-bullet-1.png") no-repeat 0 0.213333rem;
+}
+.holiday-time{
+	color: #999;
+}
+.holiday-tag {
+    background: url(../../../images/tag-hotel-sales.png);
+    width:8.0rem;
+    margin: 0 auto;
+    margin-top: -0.08rem;
+    height: 0.65rem;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    background-size: 100%;
+    z-index: 2;
+    font-size: 0.4rem;
+
+}
+
+#holiday .original{
+	color: #999;
+    display: inline-block;
+    margin-left: 0.133333rem;
+    text-decoration: line-through;
+    float: left;
+}
+#holiday .original1{
+	color: #999;
+    display: inline-block;
+    margin-right: 0.133333rem;
+    text-decoration: line-through;
+}
+.holiday-more{
+	display: block;
+	width: 9.386667rem;
+    border: 0.053333rem solid  #cb5977;
+	text-align: center;
+	color:  #cb5977  !important;
+	margin:0.266667rem auto;
+	padding: 0.133333rem;
+    height: 1.28rem;
+    line-height: 1.05rem;
+    text-decoration: none;
+    
+
+	
+
+}
+.holiday-loading{
+	display: block;
+	width: 9.386667rem;
+    border: 0.053333rem solid #999;
+	text-align: center;
+	color:#999  !important;
+	margin:0.266667rem auto;
+	padding: 0.133333rem;
+    height: 1.28rem;
+    line-height: 1.05rem;
+    text-decoration: none;
+}
+.icon-refresh:before {
+    content: "\4f";
+}
+#holiday .oneItem{
+	border-bottom:0.01rem dotted #999;
+    margin-top: 0.266667rem;
+}
+
+.percent-circle{
+	border-radius: 100%;
+	border: 0.026667rem solid #9999a5;
+	width: 1.6rem;
+	height: 1.6rem;
+	color: #9999a5;
+	float: left;
+}
+.button .three,.button .cent{
+	color: #9999a5;
+	font-size: 0.52rem;
+}
+p.recommend{
+	 text-align: center;
+    font-size:0.213333rem;
+}
+
+.percent-circle p{
+	height:0.48rem;
+}
+.count{
+	margin-top: 0.32rem;
+}
+.title-percentage-min{
+	width: 1.6rem;
+	height: 1.6rem;
+}
+.holiday-cell{
+	width: 6.106667rem;
+	margin-left: 3rem;
+}
+.cell-member {
+	width: 100%;
+}
+div.holiday-btn{
+	float: right;
+}
+.holiday-btn{
+	margin-top:0.48rem;
+}
+#holiday .current{
+	text-align: right;
+}
+.original{
+	float: right;
+}
