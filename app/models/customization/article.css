@@ -1,0 +1,197 @@
+#artical .title-item-wrap{
+	width: 100%;
+	background: #e3eef5;
+}
+#artical .title-item-wrap .title-items{
+	padding-top: 15px;
+	padding-bottom: 15px;
+	height: 141px;
+	text-align: center;
+	
+}
+#artical .title-item-wrap .title-items a{
+	color: white;
+	display: inline-block;
+    margin: 5px;
+    padding: 6px 20px;
+    background: #6988a6;
+    border-radius: 20px;
+    font-size: 12px;
+}
+#artical article .title{
+	padding: 20px 10px 0px 10px;
+	
+}
+#artical article .title h4{
+	font-size: 14px;
+	text-align: center;
+	margin-bottom: 10px;
+	line-height: 16px;
+	font-weight: normal;
+}
+
+#artical article .title p{
+	color: #999;
+	text-align: center;
+	margin-bottom: 10px;
+	line-height: 16px;
+	text-align: center;
+}
+#artical article .container{
+	padding: 0 10px;
+	padding-bottom: 50px;
+}
+#artical article .container p{
+	    word-wrap: break-word;
+    font-size: 1em;
+    color: #a3a3a3;
+    margin: 10px 0 0 0;
+    line-height: 18px;
+}
+#artical article .container img{
+	margin: 0 auto;
+	display: block;
+}
+
+#artical article .label-wrap{
+	padding: 0 10px;
+	display: flex;
+	justify-content: flex-start;
+	color: #999999;
+	font-size: 14px;
+}
+#artical article .label-wrap ul{
+	margin-left: 5px;
+}
+#artical hr{
+	    height: 1px;
+    background: #ccc;
+    margin: 20px 0;
+    border: none;
+}
+#artical .comment-wrap{
+	padding: 10px;
+}
+#artical .comment-wrap .ds-login-buttons{
+	line-height: 24px;
+}
+#artical .comment-wrap .ds-login-buttons .ds-social-links ul{
+	overflow: hidden;
+}
+#artical .comment-wrap .ds-login-buttons .ds-social-links ul li{
+	float: left;
+	overflow: hidden;
+	margin-left: 6px;
+}
+#artical .comment-wrap .ds-login-buttons .ds-social-links ul li a{
+	padding-left: 20px;
+}
+#artical .comment-wrap .ds-replybox{
+	display: flex;
+	justify-content: flex-start;
+	margin-top: 10px;
+
+}
+#artical .comment-wrap .ds-replybox>a img{
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	border: 5px solid #fff;
+}
+#artical .comment-wrap .ds-replybox form{
+	flex-grow: 1;
+}
+#artical .comment-wrap .ds-replybox form .ds-textarea-wrapper{
+	width: 100%;
+	/*padding: 10px;*/
+	border: 1px solid #ccc;
+}
+#artical .comment-wrap .ds-replybox form .ds-textarea-wrapper textarea{
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	min-height: 70px;
+	border: none;
+	outline:none
+}
+#artical .comment-wrap .ds-replybox form  .ds-post-toolbar{
+	    width: 100%;
+    box-shadow: 0 1px 0 rgba(255,255,255,0.6);
+    display: flex;
+    justify-content: flex-start;
+    border: 1px solid #ccc;
+    position: relative;
+}
+#artical .comment-wrap .ds-replybox form  .ds-post-toolbar .ds-post-options{
+	flex-grow: 1;
+	height: 32px;
+}
+#artical .comment-wrap .ds-replybox form  .ds-post-toolbar .ds-post-button{
+	width: 70px;
+	height: 32px;
+	background: #cb5977;
+	border: none;
+}
+
+#artical .comment-wrap .ds-replybox form  .ds-post-toolbar .ds-toolbar-buttons{
+	position: absolute;
+	top: 5px;
+	left: 6px;
+}
+#artical .comment-wrap .ds-replybox form  .ds-post-toolbar .ds-toolbar-buttons a{
+	display: block;
+	width: 19px;
+	height: 19px;
+	background: #ccc;
+	border-radius: 50%;
+}
+#artical .comment-wrap  .ds-comments-info{
+	overflow: hidden;
+	margin-top: 10px;
+	padding: 8px 0;
+}
+#artical .comment-wrap  .ds-comments-info .ds-img{
+	float: left;
+}
+#artical .comment-wrap  .ds-comments-info .ds-sort{
+	float: right;
+}
+#artical .comment-wrap  .ds-comments-info .ds-sort a{
+	padding: 0 6px;
+}
+
+#artical .comment-wrap .ds-comments{
+	border-bottom:  1px solid rgba(0,0,0,0.13);
+}
+#artical .comment-wrap .ds-comments li{
+	border-top: 1px solid rgba(0,0,0,0.13);
+	    text-align: center;
+    color: #999;
+    padding: 12px 0;
+}
+#artical .comment-wrap .ds-comments li .comment{
+	display: flex;
+	justify-content: flex-start;
+	font-size: 12px;
+}
+#artical .comment-wrap .ds-comments li .comment .head img{
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	border: 5px solid #fff;
+}
+#artical .comment-wrap .ds-comments li .comment .cnt div{
+	margin-top: 10px;
+	text-align: left;
+}
+#artical .comment-wrap .ds-comments li .comment .cnt div:nth-of-type(1){
+	margin-top: 5px;
+	color: red;
+}
+#artical .comment-wrap .ds-comments li .comment .cnt div:nth-of-type(2){
+	color: #333;
+}
+#artical .comment-wrap .ds-comments li .comment .cnt div:nth-of-type(3) span{
+	margin-right: 5px;
+}
+
