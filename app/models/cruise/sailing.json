@@ -1,0 +1,58 @@
+{
+"errorCode": 0,
+"returnMsg": "success",
+"data": {
+"reviewList": [
+{
+"_id": {},
+"packageId": 2002,
+"packageName": "【大航海时代】水晶合韵号13天12晚西地中海浪漫热情之旅",
+"title": "完美融合",
+"reviewText": "大海与城市，酒店与邮轮，美食与服务，景观游览与阅读休闲，动静相宜，选择自如。罗马的Hassler Roma酒店紧邻西班牙台阶，许愿池和万神殿。繁华购物区亦在步行之内，游玩购物省时省力。享受特等级别的观景游玩，就乘坐水晶合韵号邮轮。无法预测的体验，只有亲身经历。",
+"rating": 5,
+"ratingParameter": {
+"room": 5,
+"staff": 5,
+"facilities": 5,
+"food": 5,
+"location": 5
+},
+"travelerType": "Solo",
+"isRecommended": true,
+"helpfulCount": 0,
+"unHelpfulCount": 0,
+"netpromoterscore": null,
+"netpromotercomment": "",
+"userId": 62227,
+"replyList": {},
+"submissionTime": "2016-10-13",
+"photo": null,
+"status": 1,
+"reviewId": "57fefbc248676968bf6672f1",
+"uuid": "140968ab-892b-4df8-a4fb-85431ede56d1",
+"nickname": "馨灵",
+"userImageUrl": "http://wx.qlogo.cn/mmopen/8xNUCib8iaAGWx0icNFLk2xGol0ibxCEyxBZl3lbL870rjjlyU5ln0ncQQ2ohX2sg4icP1VyIm3BJHROuxlNO4icjqCItIxr6E1yAZ/0"
+}
+],
+"averageRating": {
+"reviewCount": 1,
+"percentageRecommended": 1,
+"recommendedCount": 1,
+"overallRating": 5,
+"ratingParameters": {
+"room": 5,
+"staff": 5,
+"facilities": 5,
+"food": 5,
+"location": 5
+}
+},
+"packageId": "2002",
+"pageNumber": 0,
+"pageCount": "10",
+"totalReviewCount": 1,
+"recommendedCount": null,
+"sortBy": "submissionTime:-1",
+"filterBy": ""
+}
+}

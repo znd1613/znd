@@ -1,0 +1,79 @@
+#page-destination {
+	width: 100%;
+	background-color: #D3E9F6;
+	background-image: url(images/bg-image-search-results-clouds.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-attachment: fixed;
+}
+
+#page-destination section.hot-destination {
+	width: 100%;
+	position: relative;
+	display: block;
+	margin-left: 10px;
+	padding-top: 20px;
+}
+
+#page-destination section h2 {
+	font-size: 1.4em;
+	color: #8ca6c2;
+	font-weight: normal;
+	line-height: 1.4em;
+	margin-bottom: 10px;
+}
+#page-destination section .destination-items{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+#page-destination section dl{
+	margin-right: 10px;
+	display: flex;
+	width: 111px;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-bottom: 5px;
+}
+#page-destination section dl dt{
+	height: 112px;
+	width: 112px;
+	border-radius: 100%;
+	background: url(images/des_695.jpg)no-repeat;
+	background-size: cover;
+    background-position: center;
+    border-radius: 100%;
+    display: block;
+
+}
+
+#page-destination section dl dd{
+	margin-top: 5px;
+}
+
+#page-destination .destination-items-hr{
+	border: 1px dotted gray;
+	margin-top: 10px;
+}
+#page-destination .container{
+	padding: 10px;
+}
+#page-destination .container hr{
+	margin: 10px 0px;
+	border: 1px dotted #AAAAAA;
+}
+#page-destination .container .container-items h2{
+	    font-size: 1.4em;
+	    line-height: 1.4em;
+}
+#page-destination .container .container-items .items{
+	display: flex;
+	flex-wrap: wrap;
+}
+#page-destination .container .container-items a{
+	margin: 0 10px 10px 0;
+	padding: 6px 8px;
+	background: orange;
+	color: #fff;
+}

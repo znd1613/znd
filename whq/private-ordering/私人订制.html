@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="../common/reset.css" />
+		<link rel="stylesheet" type="text/css" href="private-ordering-rem.css" />
+
+	</head>
+
+	<body>
+		<div id="pageTop">
+			<header>
+				<a href="##" class="btn-bird">
+					<span class="icon-zanadu-bird">
+						
+					</span>
+					<div>zanadu.cn</div>
+				</a>
+				<img src="img/zanadu.png" />
+				<div class="btn-nav sticky-btn">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</header>
+
+			<section>
+				<div class="container">
+					<h3>
+						私人定制
+						<small>（赞那度会员专享服务）</small>
+					</h3>
+					<form action="" method="post" class="bespoke-form" id="bespoke-form">
+						<ul>
+							<li class="relative">
+								<span class="required">*</span>
+								<input class="input-text" placeholder="你想去哪里（仅限海外目的地）" autocorrect="off" spellcheck="false" autocapitalize="on" autocomplete="name" name="EnquiryCustomizedTrip[destination]" id="EnquiryCustomizedTrip_destination" type="text" maxlength="50">
+							</li>
+							<li class="relative">
+								<span class="required">*</span>
+								<input type="date" class="input-text departure_date" value="" placeholder="出行日期" >
+								<div class="errorMessage departure_date_error" id="EnquiryCustomizedTrip_departure_date_em_" style="display:none"></div> <span class="icon icon-calendar"></span>
+							</li>
+
+							<li class="relative">
+								<select class="input-text" name="EnquiryCustomizedTrip[duration]" id="EnquiryCustomizedTrip_duration">
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+									<option value="7">7</option>
+									<option value="8">8</option>
+									<option value="9">9</option>
+									<option value="10">10</option>
+									<option value="11">11</option>
+									<option value="12">12</option>
+									<option value="13">13</option>
+									<option value="14">14</option>
+									<option value="15">15</option>
+									<option value="16">16</option>
+									<option value="17">17</option>
+									<option value="18">18</option>
+									<option value="19">19</option>
+									<option value="20">20</option>
+									<option value="21">21</option>
+									<option value="22">22</option>
+									<option value="23">23</option>
+									<option value="24">24</option>
+									<option value="25">25</option>
+									<option value="26">26</option>
+									<option value="27">27</option>
+									<option value="28">28</option>
+									<option value="29">29</option>
+									<option value="30">30</option>
+								</select>
+								<span class="icon padding-right-20" style="font-size:0.9em">出行时长（天）</span>
+								<span class="icon icon-caret-down"></span>
+							</li>
+							<li class="relative">
+								<span class="required">*</span>
+								<input class="input-text" placeholder="出发城市" autocorrect="off" spellcheck="false" autocapitalize="on" autocomplete="name" name="EnquiryCustomizedTrip[departure_location]" id="EnquiryCustomizedTrip_departure_location" type="text">
+								<div class="errorMessage" id="EnquiryCustomizedTrip_departure_location_em_" style="display:none"></div>
+							</li>
+							<li>
+								<div class="input-checkbox gray">
+									<label for="EnquiryCustomizedTrip_date_flexible">
+										<div class="input left margin-right-10"></div>
+										<div class="caption left">我的日期可以弹性调整</div>
+										<div class="clearfix"></div>
+									</label>
+								</div>
+							</li>
+							<li class="relative">
+								<select class="input-text" name="EnquiryCustomizedTrip[trip_theme]" id="EnquiryCustomizedTrip_trip_theme">
+									<option value="1">历史文化</option>
+									<option value="2">自然探险</option>
+									<option value="3">家庭亲子</option>
+									<option value="4">蜜月旅行</option>
+									<option value="5">艺术和建筑</option>
+									<option value="6">美食与购物</option>
+									<option value="7">健康养生</option>
+									<option value="8">奢华邮轮</option>
+									<option value="99">其他</option>
+								</select> <span class="icon padding-right-20" style="font-size:0.9em">旅行主题</span>
+								<span class="icon icon-caret-down"></span>
+								<div class="errorMessage" id="EnquiryCustomizedTrip_trip_theme_em_" style="display:none"></div>
+							</li>
+							<li class="relative">
+								<select class="input-text" name="EnquiryCustomizedTrip[hotel_level]" id="EnquiryCustomizedTrip_hotel_level">
+									<option value="1">顶级奢华</option>
+									<option value="2">豪华尊贵</option>
+									<option value="3">小型精品</option>
+								</select> <span class="icon padding-right-20" style="font-size:0.9em">酒店等级</span>
+								<span class="icon icon-caret-down"></span>
+								<div class="errorMessage" id="EnquiryCustomizedTrip_hotel_level_em_" style="display:none"></div>
+							</li>
+							<li class="relative">
+								<select class="input-text" name="EnquiryCustomizedTrip[budget]" id="EnquiryCustomizedTrip_budget">
+									<option value="1">￥15,000 - 30,000</option>
+									<option value="2">￥30,000 - 50,000</option>
+									<option value="3">￥50,000 - 80,000</option>
+									<option value="4">￥80,000 以上</option>
+								</select> <span class="icon padding-right-20" style="font-size:0.9em">单人预算</span>
+								<span class="icon icon-caret-down"></span>
+								<div class="errorMessage" id="EnquiryCustomizedTrip_budget_em_" style="display:none"></div>
+							</li>
+							<li class="relative">
+								<select class="input-text count-select" name="EnquiryCustomizedTrip[adult_count]" id="EnquiryCustomizedTrip_adult_count">
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+									<option value="7">7</option>
+									<option value="8">8</option>
+									<option value="9">9</option>
+									<option value="10">10</option>
+									<option value="11">11</option>
+									<option value="12">12</option>
+									<option value="13">13</option>
+									<option value="14">14</option>
+									<option value="15">15</option>
+									<option value="16">16</option>
+								</select> <span class="icon padding-right-20" style="font-size:0.9em">成人总数</span>
+								<span class="icon icon-caret-down"></span>
+								<div class="errorMessage" id="EnquiryCustomizedTrip_adult_count_em_" style="display:none"></div>
+							</li>
+							<li class="relative">
+								<select class="input-text count-select" name="EnquiryCustomizedTrip[children_count]" id="EnquiryCustomizedTrip_children_count">
+									<option value="0">0</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+									<option value="7">7</option>
+									<option value="8">8</option>
+									<option value="9">9</option>
+									<option value="10">10</option>
+								</select> <span class="icon padding-right-20" style="font-size:0.9em">儿童总数</span>
+								<span class="icon icon-caret-down"></span>
+								<div class="errorMessage" id="EnquiryCustomizedTrip_children_count_em_" style="display:none"></div>
+							</li>
+							<li class="relative">
+								<label class="icon padding-right-20" style="font-size:0.9em" for="EnquiryCustomizedTrip_room_count">房间数</label> <span class="icon icon-caret-down"></span>
+								<select class="input-text" name="EnquiryCustomizedTrip[room_count]" id="EnquiryCustomizedTrip_room_count">
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+									<option value="7">7</option>
+									<option value="8">8</option>
+									<option value="9">9</option>
+									<option value="10">10</option>
+									<option value="11">11</option>
+									<option value="12">12</option>
+									<option value="13">13</option>
+									<option value="14">14</option>
+									<option value="15">15</option>
+									<option value="16">16</option>
+									<option value="17">17</option>
+									<option value="18">18</option>
+									<option value="19">19</option>
+									<option value="20">20</option>
+									<option value="21">21</option>
+									<option value="22">22</option>
+									<option value="23">23</option>
+									<option value="24">24</option>
+									<option value="25">25</option>
+									<option value="26">26</option>
+									<option value="27">27</option>
+									<option value="28">28</option>
+									<option value="29">29</option>
+									<option value="30">30</option>
+								</select>
+								<div class="errorMessage" id="EnquiryCustomizedTrip_room_count_em_" style="display:none"></div>
+							</li>
+							<li class="relative">
+								<label class="icon padding-right-20" style="font-size:0.9em" for="EnquiryCustomizedTrip_language_requirement">导游语言要求</label> <span class="icon icon-caret-down"></span>
+								<select class="input-text" name="EnquiryCustomizedTrip[language_requirement]" id="EnquiryCustomizedTrip_language_requirement">
+									<option value="0" selected="selected">只接受中文</option>
+									<option value="1">中文或英文均可</option>
+								</select>
+								<div class="errorMessage" id="EnquiryCustomizedTrip_language_requirement_em_" style="display:none"></div>
+							</li>
+							<li class="relative">
+								<label class="icon padding-right-20" style="font-size:0.9em" for="EnquiryCustomizedTrip_contact_method">首选联系方式</label> <span class="icon icon-caret-down"></span>
+								<select class="input-text  one-third" name="EnquiryCustomizedTrip[contact_method]" id="EnquiryCustomizedTrip_contact_method">
+									<option value="1">手机</option>
+									<option value="2">邮箱</option>
+								</select>
+								<div class="errorMessage" id="EnquiryCustomizedTrip_contact_method_em_" style="display:none"></div>
+							</li>
+							<li class="relative">
+								<label class="icon padding-right-20" style="font-size:0.9em" for="EnquiryCustomizedTrip_contact_time_range">方便联系时间</label> <span class="icon icon-caret-down"></span>
+								<select class="input-text js-contact-time" name="" id="">
+									<option value="00:00">00:00</option>
+									<option value="01:00">01:00</option>
+									<option value="02:00">02:00</option>
+									<option value="03:00">03:00</option>
+									<option value="04:00">04:00</option>
+									<option value="05:00">05:00</option>
+									<option value="06:00">06:00</option>
+									<option value="07:00">07:00</option>
+									<option value="08:00">08:00</option>
+									<option value="09:00">09:00</option>
+									<option value="10:00">10:00</option>
+									<option value="11:00">11:00</option>
+									<option value="12:00">12:00</option>
+									<option value="13:00">13:00</option>
+									<option value="14:00">14:00</option>
+									<option value="15:00">15:00</option>
+									<option value="16:00">16:00</option>
+									<option value="17:00">17:00</option>
+									<option value="18:00">18:00</option>
+									<option value="19:00">19:00</option>
+									<option value="20:00">20:00</option>
+									<option value="21:00">21:00</option>
+									<option value="22:00">22:00</option>
+									<option value="23:00">23:00</option>
+									<option value="24:00">24:00</option>
+								</select>
+							</li>
+							<li class="relative">
+								<label class="icon padding-right-20" style="font-size:0.9em" for="EnquiryCustomizedTrip_contact_time_range">方便联系时间</label> <span class="icon icon-caret-down"></span>
+								<select class="input-text js-contact-time" name="" id="">
+									<option value="00:00">00:00</option>
+									<option value="01:00">01:00</option>
+									<option value="02:00">02:00</option>
+									<option value="03:00">03:00</option>
+									<option value="04:00">04:00</option>
+									<option value="05:00">05:00</option>
+									<option value="06:00">06:00</option>
+									<option value="07:00">07:00</option>
+									<option value="08:00">08:00</option>
+									<option value="09:00">09:00</option>
+									<option value="10:00">10:00</option>
+									<option value="11:00">11:00</option>
+									<option value="12:00">12:00</option>
+									<option value="13:00">13:00</option>
+									<option value="14:00">14:00</option>
+									<option value="15:00">15:00</option>
+									<option value="16:00">16:00</option>
+									<option value="17:00">17:00</option>
+									<option value="18:00">18:00</option>
+									<option value="19:00">19:00</option>
+									<option value="20:00">20:00</option>
+									<option value="21:00">21:00</option>
+									<option value="22:00">22:00</option>
+									<option value="23:00">23:00</option>
+									<option value="24:00">24:00</option>
+								</select>
+							</li>
+							<li>
+								<textarea cols="43" rows="5" placeholder="特殊要求" autocorrect="on" spellcheck="true" autocapitalize="on" name="EnquiryCustomizedTrip[additional_comment]" id="EnquiryCustomizedTrip_additional_comment"></textarea>
+								<div class="errorMessage" id="EnquiryCustomizedTrip_additional_comment_em_" style="display:none"></div>
+							</li>
+							<li>
+								<div class="left half-width padding-right-5">
+									<div class="relative">
+										<span class="required">*</span>
+										<input class="input-text" placeholder="姓氏" autocorrect="off" spellcheck="false" autocapitalize="on" autocomplete="name" name="Enquiry[last_name]" id="Enquiry_last_name" type="text" maxlength="80" value="">
+										<div class="errorMessage" id="Enquiry_last_name_em_" style="display:none"></div>
+									</div>
+								</div>
+								<div class="right half-width padding-left-5">
+									<div class="relative">
+										<span class="required">*</span>
+										<input class="input-text" placeholder="名字" autocorrect="off" spellcheck="false" autocapitalize="on" autocomplete="name" name="Enquiry[first_name]" id="Enquiry_first_name" type="text" maxlength="80" value="">
+										<div class="errorMessage" id="Enquiry_first_name_em_" style="display:none"></div>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+							</li>
+							<li>
+								<span class="required">*</span>
+								<input class="input-text" placeholder="手机" autocorrect="off" spellcheck="false" autocapitalize="off" autocomplete="tel" name="Enquiry[phone_number]" id="Enquiry_phone_number" type="number" maxlength="30" value="">
+								<div class="errorMessage" id="Enquiry_phone_number_em_" style="display:none"></div>
+							</li>
+							<li>
+								<span class="required">*</span>
+								<input class="input-text" placeholder="邮箱" autocorrect="off" spellcheck="false" autocapitalize="off" autocomplete="email" name="Enquiry[email_address]" id="Enquiry_email_address" type="text" maxlength="200">
+								<div class="errorMessage" id="Enquiry_email_address_em_" style="display:none"></div>
+							</li>
+						</ul>
+						<hr class="separator solid margin-bottom-20 margin-top-20">
+						<div class="margin-bottom-20 clear">
+							<div class="input-checkbox gray">
+								<input name="User[sales_newsletter]" id="User_sales_newsletter" value="1" type="checkbox">
+								<label for="User_sales_newsletter">
+									<div class="input left margin-right-10"></div>
+									<div class="caption left">我愿意订制newsletter</div>
+									<div class="clearfix"></div>
+								</label>
+							</div>
+						</div>
+						<div class="text-center">
+    <input class="input-submit button width-auto" type="button" name="yt0" value="提交" id="yt0"></div>
+					</form>
+				</div>
+			</section>
+		</div>
+	<script src="../../app/self-adaption.js"></script>
+	</body>
+
+</html>

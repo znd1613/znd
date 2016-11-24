@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+/*loop*/
+#praise .swiper-container{width: 100%;height: 5.493333rem;margin-bottom: 0.266667rem; }
+#praise .swiper-container img{width:100%;height: 5.493333rem;}
+#main{padding-left: 0.266667rem;width: 9.466667rem;}
+#main a{display: block;border-bottom: 1px dashed #999;margin-top: 0.266667rem;}
+#main a b img{height: 3.413333rem;width: 9.466667rem;}
+#main a div{width: 8.0rem;background: url(../images/pr-bg.png) ;    margin: 0 auto; margin-top: -0.346667rem;height: 0.666667rem; text-align: center; color: #fff;position: relative;background-size: 100%; z-index: 2;}
+#main a p{line-height: 0.533333rem;margin-top: 0.213333rem;}
+#main a span{color: #cb5977;margin-bottom: 0.4rem;display: inline-block;}
+/*#main a :last-of-type{margin-bottom: 3.093333rem;}*/
+/*footer*/
+#praise footer{width: 100%;height: 1.333333rem;background: #304d64;position: fixed;left: 0;bottom: 0;z-index: 1;display: flex;justify-content:space-around;}
+#praise footer a {display: flex;flex-direction:column;margin-top: 0.32rem;}
+#praise footer a b img{width: 0.266667rem;height: 0.346667rem;display: block;margin: 0 auto;}
+#praise footer a span{margin: 0.133333rem auto;color: #8ca6c2;}
+
+
+
+
+
+

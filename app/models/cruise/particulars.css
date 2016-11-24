@@ -1,0 +1,313 @@
+@charset "utf-8";
+#particulars{
+	overflow: hidden;
+	color: #333;
+    font-size: 14px;
+    font-family: 'Montserrat', "Microsoft YaHei", Arial, sans-serif;
+    width: 100%;
+}
+
+
+.particulars-mo{
+    background:#262F36 url(../../../images/bg-pattern-diag.png) repeat;
+    color: white;
+    height: 1.146667rem;
+    
+}
+.mo{
+    height: 1.06667rem;
+    background:url(../../../images/bg-image-white-light.png) top center no-repeat;
+    padding:0.266667rem;
+}
+
+.particulars-tag {
+    background: url(../../../images/tag-hotel-sales.png);
+    width: 8.0rem;
+    margin: 0 auto;
+    margin-top: -0.08rem;
+    height: 0.65rem;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    background-size: 100%;
+    z-index: 2;
+    line-height: 0.5rem;
+}
+#particulars h2.motif {
+    color: black;
+    font-size: 1em;
+    margin: 0.266667rem 0;
+}
+.sale-tag-wrapper{
+	margin-bottom:0.266667rem;
+}
+.particulars-info{
+	width:100%;
+	padding-top:0.266667rem;
+	border-top:0.026667rem  dotted #999999;
+}
+.user-static{
+    float: left;
+    margin:0.266667rem;
+    margin-left: 0;
+}
+.wish {
+    background: #d9bdd4;	
+    width:2.666667rem;
+    text-align: center;
+    position: relative;
+}
+.wish .number {
+    background: #a77fa1;
+    padding:0.1rem;
+    font-family: 'Montserrat',Heiti,Arial,sans-serif;
+    color: #fff;
+}
+.user-static strong {
+    font-size: 3.2em;
+    display: block;
+    margin: 0.266667rem 0;
+}
+.wish p {
+    color: #a77fa1;
+    padding: 0.08rem 0;
+    margin-bottom: 0.266667rem;
+}
+.senction{
+	padding:0 0.266667rem;
+}
+.title-goo{
+  font-weight: normal;
+}
+.h3-title {
+    color: #800000;
+    
+}
+.particulars-info{
+	padding: 0.266667rem;
+	font-family: 'Montserrat', "Microsoft YaHei", Arial, sans-serif;
+
+
+
+}
+.particulars-info p{
+color: #999;
+}
+#particulars .scenery{
+	padding: 0.266667rem;
+}
+.particulars-info p {
+    line-height: 1.4em !important;
+    margin-bottom: 0.266667rem;
+}
+#cli_dialog_div{
+	display: none !important;
+ 
+}
+
+.matter{
+	padding: 0.266667rem;
+	font-family: 'Montserrat', "Microsoft YaHei", Arial, sans-serif;
+
+}
+.scroll-loading{
+	width: 100%;
+	height: 5.36rem;
+}
+.matter>h2{
+	margin-bottom: 0.266667rem;
+	font-weight: bold;
+}
+ul.nbullets{
+   color: #999;
+   font-size: 0.34rem;
+   line-height: 1.5em;
+}
+ul.nbullets p{
+	margin-bottom: 0.266667rem;
+}
+.particulars-container{
+	margin: 0.266667rem 0;
+	margin-bottom: 1.333333rem;
+}
+.icon-share{
+	font-size: 0.5rem;
+}
+.include{
+	width: 100%;
+	padding: 0.266667rem;
+	font-family: 'Montserrat', "Microsoft YaHei", Arial, sans-serif;
+	position: relative;
+    margin: 0 auto;
+    z-index: 1;
+
+}
+ul.has-corner li {
+    list-style: none;
+    padding-left: 0.4rem;
+    background: url(../../../images/pink_bullet.png) no-repeat 0 0.16rem;
+}
+.has-corner{
+    background: #e3eef5;
+    padding: 0.4rem 0.266667rem 0.4rem 0.4rem;
+    position: relative;
+    color: #333;
+    margin-bottom: 1.333333rem;
+}
+h2 {
+    margin: 0;
+    font-size: 1.2em;
+	font-weight: normal;
+    padding: 0;
+    margin-bottom: 0.133333rem;
+}
+.include h2,.review h2{
+	font-weight: bold;
+}
+.has-corner:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 24px;
+    height: 24px;
+    background: #d3e0e9;
+    background: -webkit-linear-gradient(135deg,#ffffff 50%,#d3e0e9 0);
+    background: -o-linear-gradient(135deg,#ffffff 50%,#d3e0e9 0);
+    background: -ms-linear-gradient(135deg,#ffffff 50%,#d3e0e9 0);
+    background: linear-gradient(-45deg,#ffffff 50%,#d3e0e9 0);
+
+}
+.review{
+	width: 100%;
+	padding: 0.266667rem;
+	display: block;
+    position: relative;
+}
+.frist-criticism{
+	text-align: center;
+	margin: 0.533333rem 0;
+}
+.log-wrapper{
+	text-align: center;
+	margin:0.266667rem 0;
+
+
+}
+#particulars .write-review{
+	width:3.546667rem;
+    height: 1.013333rem;
+	display: inline-block;
+    border-radius: 0.106667rem;
+    line-height: 0.4rem;
+    background: #cb5977;
+    color: white;
+    font-size: 0.373333rem;
+    line-height: 0.7rem; 
+    margin: auto 30%;
+
+
+
+}
+
+.icon-pencil:before {
+    content: "\5f";
+    color:white;
+    font-size: 0.4rem;
+}
+.log-wrapper a{
+	color: #cb5977;
+}
+.map{
+	width: 100%;
+	height: 4.48rem;
+	margin:0.266667rem 0 ;
+}
+.review-map{
+	width: 100%;
+	padding: 0.266667rem;
+	
+}
+.review-map h2{
+	font-weight: bold;
+}
+.enjoy{
+	padding:  0.266667rem;
+	padding-bottom: 1.6rem;
+}
+.dotted{
+	width: 95%;
+	border-top:0.026667rem dotted #333;
+	display: block;
+	height: 1px;
+	margin:0.266667rem 2% ;
+}
+.enjoy h2{
+	font-weight: bold;
+}
+.nearby-item{
+	width: 100%;
+	margin-bottom:0.4rem;
+	border: 0.026667rem solid #cecece;
+    position: relative;
+    height: 2.4rem;
+}
+.itemImg{
+	width: 3.2rem;
+	height: 2.426667rem;
+	float: left;
+	margin-right: 0.266667rem;
+}
+.desc h4{
+	font-size: 1.1em;
+    margin-top: 0.08rem;
+    height: 2.8em;
+    overflow: hidden;
+    font-weight: normal;
+    color: black;
+    font-weight: 0.426667rem;
+}
+.area-pirce{
+	text-align: right;
+}
+.text-right{
+		text-align: right;
+
+}
+.btn-expand{
+	text-decoration: underline;
+	color: #333333;
+
+}
+.nav-hotel {
+    background: #304d64;
+    height: 1.333333rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+}
+#tab-menu{
+	display: block;
+    float: left;
+}
+
+.nav-hotel a.button {
+	width: 30%;
+    margin-top: 0.213333rem;
+    padding: 0.43rem 0.4rem;
+    border-radius: 0.106667rem;
+    background: #ccc;
+    border: 0.053333rem solid #ccc;
+    height:0.4rem;
+    overflow: hidden;
+    line-height: 0rem;
+    font-size: 1em;
+    float: right;
+    margin-right: 0.133333rem;
+    font-size: 0.4rem;
+    color: white;
+    font-weight: bold;
+
+}
