@@ -1,5 +1,5 @@
 
-   <div id="holiday">
+   <div id="holiday" ui-view   ng-controller="holidayCtrl">
    	 <div class="cruiseBanner">
    	 	<img src="images/photo_11_28_158_mobile-w132.jpeg">
 
@@ -15,10 +15,12 @@
    	 	</div>
    	 
    	 
-   	 <div class="details" ui-sref="particulars"  ng-controller="holidayCtrl">
-   	 	<div class="oneItem">
-   	 		<a href="##">
-   	 			<img src="http://oh2x1dhbj.bkt.clouddn.com/key2_2246_bundle-w304.jpeg"   alt="【大航海时代】水晶合韵号13天12晚西地中海浪漫热情之旅" class="topic"/>
+   	 <div class="details">
+
+   	 	<div class="oneItem"   ng-repeat="x in data" ng-show="$index<num">
+   	 		
+   	 		<a ui-sref="second_frame.holiday.particulars">
+   	 			<img src="{{x.img}}"   alt="【大航海时代】水晶合韵号13天12晚西地中海浪漫热情之旅" class="topic"/>
 
    	 			<div class="holiday-sale">
     <div class="holiday-tag" data-action="index">独家专享</div>
@@ -32,10 +34,10 @@
                         新年首班赞那度专属号列车往返车票（1月1日沈阳北站发车、1月5日长白山发车）住宿以及列车上夜宵、早餐以及赠送红酒+3晚长白山住宿（柏悦/喜来登）+每日早餐（2位成人以及最多1位12岁以下儿童）+纵情滑雪体验（每房包含2成人及一位12岁以下儿童滑雪票）+长白山万达水乐园及雪圈乐园体验各一次（包含2成人及一位12岁以下儿童）+赞那度专享旅行包+新年神秘礼物+专车松江河站到万达度假区接送            
    	 		</div>
                <!--要判断会员专享-->         
-   	 	<a href="##" class="button"><span class="original">¥15,800</span><span>¥</span>
+   	 	<a ui-sref="second_frame.holiday.particulars" class="button" ng-if="x.status==0"><span class="original">¥15,800</span><span>¥</span>
    	 	<strong>33.500</strong><small> /  / 双人5晚套餐</small><div class="round-icon"><span class="icon-arrow-right"></span></div></a>
    	 	<!--判断会员专享-->
-   	 	<a href="##" class="button">
+   	 	<a ui-sref="second_frame.holiday.particulars" class="button" ng-if="x.status==1">
            <div class="title-percentage-min">
               <div class="cell-member">
                    <div class="percent-circle">
@@ -64,7 +66,9 @@
    	 	</div>
    
    	 </div>
-   	 <a  href="" class="holiday-more">查看更多 <span class="icon-refresh"></span></a>
+   	 <a  href="" class="holiday-more" ng-click="lodingMore()"  ng-show="flag">查看更多 <span class="icon-refresh"></span></span></a>
+   	 <span class="holiday-loading" ng-hide="flag">加载中 <img src="./images/loader_transparent-w119.gif"/>
+   	 
    
    </div>
   

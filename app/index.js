@@ -5,7 +5,7 @@
 		.config(function($stateProvider,$urlRouterProvider){
 
 
-		 $urlRouterProvider.otherwise('/home')
+		 $urlRouterProvider.otherwise('/home');
 
 
 		  $stateProvider
@@ -38,7 +38,7 @@
    			}
    			// 点击头部左侧图标，统一回到首页部分
    			$scope.backClick=function(){
-   				$location.url('/home');
+			$location.url('/home');
    			}
 
 		})

@@ -1,6 +1,6 @@
 
-   <div id="particulars">
-   <a name="overview" class="anchor-link"></a>
+   <div id="particulars" ng-controller="particularsCtrl">
+   <a id="overview" class="anchor-link"></a>
    	
 
    	
@@ -13,7 +13,7 @@
                     <small> / 双人5晚套餐</small>
          </div>
          <a href="##" class="btn-wanna-go"><span class="icon-heart"></span></a>
-         <div class="interlinkage">
+         <div class="interlinkage" ng-click="share()">
          	<span class="icon-share"></span>
          	<div class="sub-menu">
          	<a href="##" class="microblog"><span></span>分享到新浪微博</a>
@@ -25,20 +25,16 @@
    	 </div>
    	 </div>
    	  <div class="particulars-banner">
-   	  	<div class="banner-length">
-         	<div class="banner-img"><img src="images/key2_2271_bundle-w130.jpeg"/></div>
- 
-         <div class="banner-img"><img src="images/key2_2271_bundle-w130.jpeg"/></div>
-    
-         <div class="banner-img"><img src="images/key2_2271_bundle-w130.jpeg"/></div>
-        
-         <div class="banner-img"><img src="images/key2_2271_bundle-w130.jpeg"/></div>
-   
-         <div class="banner-img"><img src="images/key2_2271_bundle-w130.jpeg"/></div>
-      
-         </div>
-         <div class="pagination"><span class="current">4</span>/<span>12</span></div>
-         
+   	  	
+    <div class="swiper-container" ng-controller="bannerCtrl">
+	    <div class="swiper-wrapper">
+	        <div class="swiper-slide" ng-repeat="y in data">
+	        	<img ng-src="{{y.img}}"/>
+	        </div>
+
+	    </div>
+	    <div class="swiper-pagination"></div>
+	    
    	</div>
    	<div class="sale-tag-wrapper">
    		
@@ -85,7 +81,7 @@
    	<p>新年礼物是所有人都会期许的，赞那度为我们的列车客人提供了有品位有格调的神秘礼物，让我先悄悄的告诉您，您的赞那度新年第一个礼物是来自澳洲著名有机护肤品牌Apelles随身旅行装。之后还会有更多神秘礼物哦！</p>
    	<p>&nbsp;</p>
    	<p></p>
-   <a name="features" class="anchor-link"></a>
+   <a id="features" class="anchor-link"></a>
    	
    	<div class="clearfix"></div>
    </div>
@@ -142,10 +138,12 @@
                         <p></p><p>本套餐包含纵情滑雪体验，以及长白山万达水乐园及雪圈乐园体验各一次。</p>
 
 <p>无论是体验踏雪而行的乐趣，还是体验滑雪俯冲的刺激，这里一定会让你在冰雪的世界里嗨翻天！</p>
-   <a name="options" class="anchor-link"></a>
+
 <p></p>
                     </div>
                 </li>
+   <a id="options" class="anchor-link"></a>
+                
         </ul>
 
     <span class="separator"></span>
@@ -163,7 +161,7 @@
     	<li>赞那度专享旅行包</li>
     	<li>新年神秘礼物（Apelles随身旅行装等）</li>
     	<li>专车松江河站到万达度假区接送</li>
-    	<a name="review" class="anchor-link"></a>
+    	<a id="review" class="anchor-link"></a>
     	
     	</ul>
 
@@ -183,8 +181,8 @@
                     请您<a href="##">免费注册会员</a>，享受此功能<br/>
                     如已经注册，请<a href="##">登录</a>
                 </div>
-                <a class="button write-review" ">
-                	<span class="icon-pencil"></span> 发表评论</a>
+                <a class="button write-review"  ui-sref="second_frame.holiday.comments">
+                	<span class="icon-pencil" ></span> 发表评论</a>
                     </div>
     </div>
     	</div>
@@ -252,7 +250,7 @@
 <section class="nav-hotel">
         <ul id="tab-menu" class="noBullets">
             <li>
-                <a href="#overview">
+                <a ng-click="overview1()">
                     <span class="arrow-down"></span>
                     <span class="icon-star"></span>
 
@@ -262,7 +260,7 @@
 
             
             <li>
-                <a href="#features">
+                <a ng-click="features1()">
                     <span class="arrow-down"></span>
                     <span class="icon-mobile-flag"></span>
 
@@ -271,7 +269,7 @@
             </li>
 
                             <li>
-                    <a href="#options">
+                    <a ng-click="options1()">
                         <span class="arrow-down"></span>
                         <span class="icon-bundle"></span>
 
@@ -280,7 +278,7 @@
                 </li>
             
                             <li class="on">
-                    <a href="#review">
+                    <a ng-click="review1()">
                         <span class="arrow-down"></span>
                         <span class="icon-comment"></span>
 

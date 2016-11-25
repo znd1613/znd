@@ -9,17 +9,31 @@ angular.module('projectDemo.sailingPage',[])
  
     }])
 
-// .service('getSailingData',function ($http){
-//  	 this.sailingData= function () {
-//          return $http.get('./json/cruise.json/cruise.json');
-//      };
-//  })
-//   .controller('cruiseCtrl',function($scope,getCruiseData){
-//      console.log('2');
-//       getSailingData.sailingData().success(function (res) {
-//          $scope.data = res['大航海时代'][0]["data"];
-//          console.log(res['大航海时代'][0]["data"][0]["img"]);
-//      });
-//      
-//  });
-//
+   .service('getCruise',function ($http){
+    	 this.sailingData= function () {
+            return $http.get('./json/cruise.json/sailingBanner.json');
+        };
+    })
+    .controller('sailingCtrl',function($scope,getCruise){
+	  getCruise.sailingData().success(function (res) {
+	  	$scope.data=res.data;
+	  	console.log(res.data);
+	  	 $scope.slider = function () {
+         var mySwiper = new Swiper ('#sailing .swiper-container', {
+		    pagination : '#sailing  .swiper-pagination',
+		    loop : true,
+		    autoplay : 1000,
+		    loopAdditionalSlides : 1,
+		    paginationType : 'fraction',
+		    updateOnImagesReady : true,
+		    autoplayDisableOnInteraction : false,
+		    observer:true,//修改swiper自己或子元素时，自动初始化swiper
+    	observeParents:true,//修改swiper的父元素时，自动初始化swiper
+
+ 
+         })    
+       };
+        //执行轮播图service
+        $scope.slider();
+	  });
+})
